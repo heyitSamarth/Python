@@ -1,0 +1,2 @@
+s="sam"
+print(s)
