@@ -3,7 +3,7 @@ s="sam"
 s=[1,2,3]  #can change data type of same variable
 print(s)
 
-#STRING
+#STRING (immutable)
 s='Hey Sam!'
 print(s[2:])
 print(s[:2])#exclusive of 2
@@ -11,6 +11,7 @@ print(s[::2])
 print(s[2:5:3])#last argument  jumps the pointer
 print(s[::-1])#reverse the string
 #string are immutable means s[0]=w will give error
+
 
 s=s+" How are u???"
 print(s)
@@ -78,7 +79,7 @@ f = open("demofile.txt","w")# use a for append and w to re -write
 f.write("samarth dubey watchguard 2")
 f.close()
 f = open("demofile.txt","r")#use r to read a file
-print(f.readlines())#read for wole data and read lines for everything
+print(f.read())#read for wole data and read lines for everything
 
 
 #----------------------------------------------------------------
@@ -104,5 +105,97 @@ list2=["one","two","three","four"]
 for item in zip(list1,list2):#joint multiple  list and create tuples 
     print(item)
 
+mylist=[n**2 for n in range(0,11) if(n**2)%2==0]
+#single line code
+print(mylist)
 #in keyword operator
 print(1 in list1)
+
+#----------------------------------------------------------------
+#FUNCTION
+#def will tell about function and it is written in snake casing
+
+def function1(num1=1,num2=1):#create defult value
+    return num1+num2
+
+print(function1(5,6))
+
+def checkeven(numlist):
+    evenlist=[]
+    for n in numlist:
+        if(n%2==0):
+            evenlist.append(n)
+    return evenlist
+
+print(checkeven([1,3,5,7,2,4,6,8,0]))
+
+#return multiple item with tupple unpacking
+
+#----------------------------------------------------------------------
+#Game
+def take_guess():
+    n=''
+    while n not in ['0','1','2']:
+        n=input("Take a Guess! 0  ,  1   or   2  ->>>  ")
+
+    return int(n)
+def check_guess(mylist,guess):
+    if(mylist[guess]=='0'):
+        print("You Win !!!!")
+        print(mylist)
+    else:
+        print("You loose\n")
+        print(mylist)
+
+
+from random  import shuffle
+mylist=[' ',' ','0']
+shuffle(mylist)
+# guess=take_guess()
+# check_guess(mylist,guess)
+
+#-------------------------------------------------------------
+# *ARGS AND KARGS
+
+#as some time we need more parameters 
+def myfunc(*args):
+    return sum(args)*0.05
+
+print(myfunc(20,10,30,50))#insert any arguments as u want
+
+#keywordarguments are **kwargs
+def myfunction(**kwargs):
+    if("fruit" in kwargs):
+        print('my fruit is {} .'.format(kwargs['fruit']))
+    elif("veggi" in kwargs):
+        print ('my veggi is {} .'.format(kwargs['veggi']))
+ 
+
+myfunction(fruit="Apple",veggi="tomato")
+
+
+
+#-------------------------------------------------------------------
+def square(num):
+    return num**2
+def odd(num):
+    return num%2==1
+for item in map(square,list1):#we can use map function to map a function a data that need to run 
+    break
+print(list(map(square,list1)))
+
+
+print(list(filter(odd,list1)))#will map two function but filter it as functio that is passesd and return bollean and return value of input list
+
+square=lambda num:num**2
+print(square(2))
+
+print(list(map(lambda num:num**2,list1)))
+
+#scope
+#LEGB RULE
+#L local within function local scope like lambda or def
+#E Enclosing function locals 
+#G Global declared global 
+#B built in global 
+
