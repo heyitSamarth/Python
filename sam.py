@@ -199,3 +199,23 @@ print(list(map(lambda num:num**2,list1)))
 #G Global declared global 
 #B built in global 
 
+
+
+#-------------------------------------------------------------------
+#OOPS
+
+class Dog():
+    #same for every instance of class
+    species='mamal'
+    def __init__(self,breed,name):
+        self.breed=breed
+        self.name=name
+
+    def bark(self,num):
+        print("Woof! My name is {} and number is {}".format(self.name,num))
+
+
+my_dog=Dog("husky","annie")
+my_dog.bark(5)
+
+
