@@ -219,3 +219,107 @@ my_dog=Dog("husky","annie")
 my_dog.bark(5)
 
 
+#-------------------------------------------------------------------
+#Advance programing modules
+from collections import Counter
+mylist=[1,1,1,2,3,4,4,4,4,1,1,3,6,2,3,4,5,3]
+print(Counter(mylist)) #tell frequency of every element and put it in dictonary 
+d=Counter("aihdiahdaihi21hi21ub")
+print(d) #can use dictonary modules
+print(d['i'])
+
+from collections import defaultdict
+#it will assing default value when key error occcour
+
+dd=defaultdict(lambda:0)
+dd["kkk"]=879
+print(dd['o'])
+
+
+from collections import namedtuple
+Dog=namedtuple('Dog',['age','name','breed'])
+sammy=Dog(age=5,breed='Husky',name='sammy')
+print(sammy)
+
+
+f=open('practice.txt','w+')
+f.write("MY NEW FILE")
+f.close()
+
+#os will help to run os commands
+import os
+print(os.listdir())
+#shutil will hep to use shell comand
+import shutil
+# shutil.move( "practice.txt",'C:\Users\sdubey\Desktop')
+
+
+#import date timr for date and time factors
+
+import datetime
+mytime=datetime.time(13,4,50,20)
+print(mytime)
+today=datetime.date.today
+print(today())
+
+
+#Regular expressions
+import re
+#\d a digit 
+#\w a alfanumeric
+#\s white space
+#\D  a non digit 
+#\W  non alphanumeric
+#\S non whitespace
+#+ occure more then one time
+#{3} occure 3 times
+#{2,4} occure 2 to 4 times
+#{3,} occure 3 or mpre times
+#* occure 0 or more times
+#? once or none
+# | pipe operatore used as or 
+
+
+#---------------------------------------------------------------------
+#WEB SCRAPPING
+import requests,bs4,lxml
+result=requests.get("https://watchguard.udemy.com/course/complete-python-bootcamp/learn/lecture/20345241#overview")
+soup=bs4.BeautifulSoup(result.text,"lxml")#this will make code arranged and sytmatic 
+print(soup.select('title')[0].getText())#get text we can just get main text aut of whole content
+# for image
+print(soup.select('img'))
+
+
+
+#---------------------------------------------------------------------
+#Image in python (PIL library)
+from PIL import Image
+mac=Image.open('example.png')
+mac.show()
+#crop image
+mac.crop((0,0,100,100))
+  
+#----------------------------------------------------------------
+#smtplib for email
+# import smtplib,getpass
+# smtp_object=smtplib.SMTP('smtp.gmail.com',8000,'/')
+# email=getpass.getpass("enter email")
+# password=getpass.getpass("enter password")
+# smtp_object.ehlo()
+# smtp_object.login(email,password)
+
+#-----------------------------------------------------------------
+#GUI
+from ipywidgets import interact ,fixed,interactive
+import ipywidgets as widgets
+
+
+def func(x):
+    return x
+interact(func,x=10)
+
+
+
+
+
+

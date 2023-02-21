@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"/>
+  <title>
+   sam - Google Search
+  </title>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a="1"===c||"q"===c&&!a.elements.q.value?!0:!1}else a=!1;a&&(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&&a!==document.documentElement;a=a.parentElement)if("A"===a.tagName){a="1"===a.getAttribute("data-nohref");break a}a=!1}a&&b.preventDefault()},!0);}).call(this);(function(){var a=window.performance;window.start=Date.now();a:{var b=window;if(a){var c=a.timing;if(c){var d=c.navigationStart,f=c.responseStart;if(f>d&&f<=window.start){window.start=f;b.wsrt=f-d;break a}}a.now&&(b.wsrt=Math.floor(a.now()))}}window.google=window.google||{};var h=function(g){g&&g.target.setAttribute("data-iml",String(Date.now()))};document.documentElement.addEventListener("load",h,!0);google.rglh=function(){document.documentElement.removeEventListener("load",h,!0)};}).call(this);(function(){window._skwEvts=[];})();(function(){window.google.erd={jsr:1,bv:1746,de:true};})();(function(){var sdo=false;var mei=10;
+var h=this||self;var k,l=null!=(k=h.mei)?k:1,n,p=null!=(n=h.sdo)?n:!0,q=0,r,t=google.erd,v=t.jsr;google.ml=function(a,b,d,m,e){e=void 0===e?2:e;b&&(r=a&&a.message);if(google.dl)return google.dl(a,e,d),null;if(0>v){window.console&&console.error(a,d);if(-2===v)throw a;b=!1}else b=!a||!a.message||"Error loading script"===a.message||q>=l&&!m?!1:!0;if(!b)return null;q++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&ei="+b(google.kEI);google.kEXPI&&(c+="&jexpid="+b(google.kEXPI));c+="&srcpg="+b(google.sn)+"&jsr="+b(t.jsr)+"&bver="+b(t.bv);var f=a.lineNumber;void 0!==f&&(c+="&line="+f);var g=
+a.fileName;g&&(0<g.indexOf("-extension:/")&&(e=3),c+="&script="+b(g),f&&g===window.location.href&&(f=document.documentElement.outerHTML.split("\n")[f],c+="&cad="+b(f?f.substring(0,300):"No script found.")));c+="&jsel="+e;for(var u in d)c+="&",c+=b(u),c+="=",c+=b(d[u]);c=c+"&emsg="+b(a.name+": "+a.message);c=c+"&jsst="+b(a.stack||"N/A");12288<=c.length&&(c=c.substr(0,12288));a=c;m||google.log(0,"",a);return a};window.onerror=function(a,b,d,m,e){r!==a&&(a=e instanceof Error?e:Error(a),void 0===d||"lineNumber"in a||(a.lineNumber=d),void 0===b||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,"SyntaxError"===a.name||"SyntaxError"===a.message.substring(0,11)||-1!==a.message.indexOf("Script error")?3:0));r=null;p&&q>=l&&(window.onerror=null)};})();(function(){var c=[],e=0;window.ping=function(b){-1==b.indexOf("&zx")&&(b+="&zx="+Date.now());var a=new Image,d=e++;c[d]=a;a.onerror=a.onload=a.onabort=function(){delete c[d]};a.src=b};}).call(this);
+  </script>
+  <style>
+   a{color:#1a0dab;text-decoration:none;tap-highlight-color:rgba(0,0,0,.10)}a:visited{color:#4b11a8}a:hover{text-decoration:underline}img{border:0}html{font-family:arial,sans-serif;font-size:14px;line-height:20px;text-size-adjust:100%;color:#3c4043;word-wrap:break-word;background-color:#fff}.bRsWnc{background-color:#fff;border-top:1px solid #dadce0;height:39px;overflow:hidden}.N6RWV{height:51px;overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden}.Uv67qb{box-pack:justify;font-size:12px;line-height:37px;justify-content:space-between;justify-content:space-between}.Uv67qb a,.Uv67qb span{color:#70757a;display:block;flex:none;padding:0 16px;text-align:center;text-transform:uppercase;}span.OXXup{border-bottom:2px solid #4285f4;color:#4285f4;font-weight:bold}a.eZt8xd:visited{color:#70757a}.FElbsf{border-left:1px solid rgba(0,0,0,.12)}header article{overflow:visible}.Pg70bf{height:39px;display:box;display:flex;display:flex;width:100%}.H0PQec{position:relative;flex:1}.sbc{display:flex;width:100%}.Pg70bf input{margin:2px 4px 2px 8px;}.x{width:26px;color:#70757a;font:27px/38px arial, sans-serif;line-height:40px;}#qdClwb{flex:0 0 auto;width:39px;height:39px;border-bottom:0;padding:0;border-top-right-radius:8px;background-color:#1a73e8;border:1px solid #1a73e8;background-image:url(data:image/gif;base64,R0lGODdhJAAjAPIHAODr/nCk+MPZ/FmV96zK+/7+/5K5+kqL9iwAAAAAJAAjAEADani63P4wykmbKcQRXDscQAEMXmmeaLQVLCukzyC09AjfeK7v/MAajACLhPMVAgwjsUcEiZa8xgAYrVqv2Kx2iwsIAAABknfBBAKrTE4IcMyot8ur8datqIbQfJdnAfo2WE6BV05wXIiJigkAOw==);}.sc{font-size:16px;position:absolute;top:39px;left:0;right:0;box-shadow:0 2px 5px rgba(0,0,0,.2);z-index:2;background-color:#fff}.sc>div{padding:10px 10px;padding-left:16px;padding-left:14px;border-top:1px solid #dfe1e5;}.scs{background-color:#fafafa;}.noHIxc{display:block;font-size:16px;padding:0 0 0 8px;flex:1;height:35px;outline:none;border:none;width:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);overflow:hidden;}.sbc input[type=text]{background:none}.bz1lBb{background-color:#fff;border-radius:8px 8px 0 0;box-shadow:0 0 0 1px #dfe1e5;margin-top:24px;}.KP7LCb{border-radius:0 0 8px 8px;box-shadow:0px 1px 0px 1px #dfe1e5;margin-bottom:30px;overflow:hidden}html{background-color:#fff}body{margin:0 auto 0 156px;max-width:652px;min-width:652px;padding:0 8px}.cOl4Id{letter-spacing:-1px;text-align:center;font:22pt Futura, Arial, sans-serif;height:37px;font-smoothing:antialiased;padding:32px 28px 0 24px;position:absolute;left:0;top:0}.cOl4Id span{display:inline-block}.V6gwVd{color:#4285f4}.iWkuvd{color:#ea4335}.cDrQ7{color:#fcc934}.ntlR9{color:#34a853}.tJ3Myc{-webkit-transform:rotate(-20deg);position:relative;left:-1px;display:inline-block}footer{text-align:center;margin-top:18px}footer a,footer a:visited,.smiUbb{color:#70757a}.xeDNfc{margin:0 13px;white-space:nowrap}#EOlPnc{margin-top:36px}#EOlPnc>div{margin:20px}.Srfpq{color:#70757a}
+  </style>
+ </head>
+ <body jsmodel="hspDDf">
+  <header id="hdr">
+   <script nonce="fBrVOKFlihv0L1odzffNHg">
+    (function(){
+var k=this||self,l=function(a){var b=typeof a;return"object"==b&&null!=a||"function"==b},m=function(a,b){function c(){}c.prototype=b.prototype;a.j=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.l=function(d,e,f){for(var g=Array(arguments.length-2),h=2;h<arguments.length;h++)g[h-2]=arguments[h];return b.prototype[e].apply(d,g)}};var n=Array.prototype.indexOf?function(a,b){return Array.prototype.indexOf.call(a,b,void 0)}:function(a,b){if("string"===typeof a)return"string"!==typeof b||1!=b.length?-1:a.indexOf(b,0);for(var c=0;c<a.length;c++)if(c in a&&a[c]===b)return c;return-1};var p=function(a){return"string"==typeof a.className?a.className:a.getAttribute&&a.getAttribute("class")||""},q=function(a,b){"string"==typeof a.className?a.className=b:a.setAttribute&&a.setAttribute("class",b)},r=function(a,b){a.classList?b=a.classList.contains(b):(a=a.classList?a.classList:p(a).match(/\S+/g)||[],b=0<=n(a,b));return b},v=function(){var a=t,b=u;a.classList?a.classList.remove(b):r(a,b)&&q(a,Array.prototype.filter.call(a.classList?a.classList:p(a).match(/\S+/g)||[],function(c){return c!=
+b}).join(" "))};function w(){var a=k.navigator;return a&&(a=a.userAgent)?a:""};var x=function(a){x[" "](a);return a};x[" "]=function(){};var y=-1!=w().indexOf("Gecko")&&!(-1!=w().toLowerCase().indexOf("webkit")&&-1==w().indexOf("Edge"))&&!(-1!=w().indexOf("Trident")||-1!=w().indexOf("MSIE"))&&-1==w().indexOf("Edge");var z=function(a,b){this.type=a;this.target=b};z.prototype.g=function(){};var A=function(){if(!k.addEventListener||!Object.defineProperty)return!1;var a=!1,b=Object.defineProperty({},"passive",{get:function(){a=!0}});try{k.addEventListener("test",function(){},b),k.removeEventListener("test",function(){},b)}catch(c){}return a}();var C=function(a){z.call(this,a?a.type:"");this.relatedTarget=this.target=null;this.button=this.screenY=this.screenX=this.clientY=this.clientX=0;this.key="";this.keyCode=0;this.metaKey=this.shiftKey=this.altKey=this.ctrlKey=!1;this.state=null;this.pointerId=0;this.pointerType="";this.h=null;if(a){var b=this.type=a.type,c=a.changedTouches&&a.changedTouches.length?a.changedTouches[0]:null;this.target=a.target||a.srcElement;var d=a.relatedTarget;if(d){if(y){a:{try{x(d.nodeName);var e=!0;break a}catch(f){}e=
+!1}e||(d=null)}}else"mouseover"==b?d=a.fromElement:"mouseout"==b&&(d=a.toElement);this.relatedTarget=d;c?(this.clientX=void 0!==c.clientX?c.clientX:c.pageX,this.clientY=void 0!==c.clientY?c.clientY:c.pageY,this.screenX=c.screenX||0,this.screenY=c.screenY||0):(this.clientX=void 0!==a.clientX?a.clientX:a.pageX,this.clientY=void 0!==a.clientY?a.clientY:a.pageY,this.screenX=a.screenX||0,this.screenY=a.screenY||0);this.button=a.button;this.keyCode=a.keyCode||0;this.key=a.key||"";this.ctrlKey=a.ctrlKey;this.altKey=a.altKey;this.shiftKey=a.shiftKey;this.metaKey=a.metaKey;this.pointerId=a.pointerId||0;this.pointerType="string"===typeof a.pointerType?a.pointerType:B[a.pointerType]||"";this.state=a.state;this.h=a;a.defaultPrevented&&C.j.g.call(this)}};m(C,z);var B={2:"touch",3:"pen",4:"mouse"};C.prototype.g=function(){C.j.g.call(this);var a=this.h;a.preventDefault?a.preventDefault():a.returnValue=!1};var D="closure_listenable_"+(1E6*Math.random()|0);var E=0;var F=function(a,b,c,d,e){this.listener=a;this.proxy=null;this.src=b;this.type=c;this.capture=!!d;this.h=e;this.key=++E;this.g=this.i=!1},G=function(a){a.g=!0;a.listener=null;a.proxy=null;a.src=null;a.h=null};var H=function(a){this.src=a;this.g={};this.h=0};H.prototype.add=function(a,b,c,d,e){var f=a.toString();a=this.g[f];a||(a=this.g[f]=[],this.h++);var g;a:{for(g=0;g<a.length;++g){var h=a[g];if(!h.g&&h.listener==b&&h.capture==!!d&&h.h==e)break a}g=-1}-1<g?(b=a[g],c||(b.i=!1)):(b=new F(b,this.src,f,!!d,e),b.i=c,a.push(b));return b};var I="closure_lm_"+(1E6*Math.random()|0),J={},K=0,M=function(a,b,c,d,e){if(d&&d.once)return L(a,b,c,d,e);if(Array.isArray(b)){for(var f=0;f<b.length;f++)M(a,b[f],c,d,e);return null}c=N(c);return a&&a[D]?a.g(b,c,l(d)?!!d.capture:!!d,e):O(a,b,c,!1,d,e)},O=function(a,b,c,d,e,f){if(!b)throw Error("a");var g=l(e)?!!e.capture:!!e,h=P(a);h||(a[I]=h=new H(a));c=h.add(b,c,d,g,f);if(c.proxy)return c;d=Q();c.proxy=d;d.src=a;d.listener=c;if(a.addEventListener)A||(e=g),void 0===e&&(e=!1),a.addEventListener(b.toString(),d,e);else if(a.attachEvent)a.attachEvent(R(b.toString()),d);else if(a.addListener&&a.removeListener)a.addListener(d);else throw Error("b");K++;return c},Q=function(){var a=S,b=function(c){return a.call(b.src,b.listener,c)};return b},L=function(a,b,c,d,e){if(Array.isArray(b)){for(var f=0;f<b.length;f++)L(a,b[f],c,d,e);return null}c=N(c);return a&&a[D]?a.h(b,c,l(d)?!!d.capture:!!d,e):O(a,b,c,!0,d,e)},T=function(a){if("number"!==typeof a&&a&&!a.g){var b=a.src;if(b&&b[D])b.o(a);else{var c=a.type,d=a.proxy;b.removeEventListener?b.removeEventListener(c,d,a.capture):b.detachEvent?b.detachEvent(R(c),d):b.addListener&&b.removeListener&&b.removeListener(d);K--;if(c=P(b)){d=a.type;if(d in c.g){var e=c.g[d],f=n(e,a),g;(g=0<=f)&&Array.prototype.splice.call(e,f,1);g&&(G(a),0==c.g[d].length&&(delete c.g[d],c.h--))}0==c.h&&(c.src=null,b[I]=null)}else G(a)}}},R=function(a){return a in J?J[a]:J[a]="on"+a},S=function(a,b){if(a.g)a=!0;else{b=new C(b,this);var c=a.listener,d=a.h||a.src;a.i&&T(a);a=c.call(d,b)}return a},P=function(a){a=a[I];return a instanceof H?a:null},U="__closure_events_fn_"+(1E9*Math.random()>>>0),N=function(a){if("function"===typeof a)return a;a[U]||(a[U]=function(b){return a.handleEvent(b)});return a[U]};var u,t=document.documentElement,V;function W(){T(V);V=L(t,"mousedown",function(){v();X()},{capture:!0})}function X(){T(V);V=M(t,"keydown",function(a){if(9===a.keyCode){a=t;var b=u;if(a.classList)a.classList.add(b);else if(!r(a,b)){var c=p(a);q(a,c+(0<c.length?" "+b:b))}W()}})};u="zAoYTe";X();}).call(this);
+   </script>
+   <div class="cOl4Id">
+    <a href="/?sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQOwgC">
+     <span class="V6gwVd">
+      G
+     </span>
+     <span class="iWkuvd">
+      o
+     </span>
+     <span class="cDrQ7">
+      o
+     </span>
+     <span class="V6gwVd">
+      g
+     </span>
+     <span class="ntlR9">
+      l
+     </span>
+     <span class="iWkuvd tJ3Myc">
+      e
+     </span>
+    </a>
+   </div>
+   <div class="bz1lBb">
+    <form class="Pg70bf" id="sf">
+     <input name="ie" type="hidden" value="ISO-8859-1"/>
+     <div class="H0PQec">
+      <div class="sbc esbc">
+       <input autocapitalize="none" autocomplete="off" class="noHIxc" name="q" spellcheck="false" type="text" value="sam"/>
+       <input name="oq" type="hidden"/>
+       <input name="aqs" type="hidden"/>
+       <div class="x">
+        ×
+       </div>
+       <div class="sc">
+       </div>
+      </div>
+     </div>
+     <button id="qdClwb" type="submit">
+     </button>
+    </form>
+   </div>
+   <noscript>
+    <meta content="0;url=/search?q=sam&amp;ie=UTF-8&amp;gbv=1&amp;sei=MG30Y-2OELKq1QGW4o2oDQ" http-equiv="refresh"/>
+    <style>
+     table,div,span,p{display:none}
+    </style>
+    <div style="display:block">
+     Please click
+     <a href="/search?q=sam&amp;ie=UTF-8&amp;gbv=1&amp;sei=MG30Y-2OELKq1QGW4o2oDQ">
+      here
+     </a>
+     if you are not redirected within a few seconds.
+    </div>
+   </noscript>
+  </header>
+  <div id="main">
+   <div>
+    <div class="KP7LCb">
+     <div class="bRsWnc">
+      <div class="N6RWV">
+       <div class="Pg70bf Uv67qb">
+        <span class="OXXup">
+         All
+        </span>
+        <a class="eZt8xd" href="/search?q=sam&amp;ie=UTF-8&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ_AUIBigB">
+         Images
+        </a>
+        <a class="eZt8xd" href="/search?q=sam&amp;ie=UTF-8&amp;source=lnms&amp;tbm=vid&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ_AUIBygC">
+         Videos
+        </a>
+        <a class="eZt8xd" href="/search?q=sam&amp;ie=UTF-8&amp;source=lnms&amp;tbm=nws&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ_AUICCgD">
+         News
+        </a>
+        <a href="https://maps.google.co.in/maps?q=sam&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ_AUICSgE">
+         Maps
+        </a>
+        <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnms&amp;tbm=shop&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ_AUICigF">
+         Shopping
+        </a>
+        <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnms&amp;tbm=bks&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ_AUICygG">
+         Books
+        </a>
+        <div class="FElbsf">
+         <a href="/advanced_search" id="st-toggle" role="button" style="white-space:nowrap">
+          Search tools
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="Pg70bf wEsjbd Gx5Zad xpd EtOod pkphOe" id="st-card" style="display:none">
+     <style>
+      .wEsjbd{background-color:#fff;height:44px;white-space:nowrap}.coPU8c{height:60px;overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden}.Xj2aue{height:44px;overflow:hidden}.RnNGze{margin:11px 16px}.wEsjbd div,.wEsjbd a,.wEsjbd li{outline-width:0;outline:none}
+     </style>
+     <div class="Xj2aue">
+      <div class="coPU8c">
+       <div class="RnNGze">
+        <style>
+         .PA9J5{display:inline-block}.RXaOfd{display:inline-block;height:22px;position:relative;padding-top:0;padding-bottom:0;padding-right:16px;padding-left:0;line-height:22px;cursor:pointer;text-transform:uppercase;font-size:12px;color:#70757a}.sa1toc{background:#fff;display:none;position:absolute;border:1px solid #dadce0;box-shadow:0 2px 4px rgba(0,0,0,.3);margin:0;white-space:nowrap;z-index:103;line-height:17px;padding-top:5px;padding-bottom:5px;padding-left:0}.PA9J5:hover .sa1toc{display:block}.mGSy8d a:active,.RXaOfd:active{color:#4285f4}
+        </style>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <style>
+           .TWMOUc{display:inline-block;padding-right:14px;white-space:nowrap}.vQYuGf{font-weight:bold}.OmTIzf{border-color:#909090 transparent;border-style:solid;border-width:4px 4px 0 4px;width:0;height:0;margin-left:-10px;top:50%;margin-top:-2px;position:absolute}.RXaOfd:active .OmTIzf{border-color:#4285f4 transparent}
+          </style>
+          <div class="TWMOUc">
+           Any country
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <style>
+           .ozatM{font-size:12px;text-transform:uppercase}.ozatM .yNFsl,.ozatM li{list-style-type:none;list-style-position:outside;list-style-image:none}.yNFsl.SkUj4c,.yNFsl a{color:#70757a;text-decoration:none;padding:6px 44px 6px 14px;line-height:17px;display:block}.SkUj4c{background-image:url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);background-position:right center;background-repeat:no-repeat}.SkUj4c:active{background-color:#f8f9fa}
+          </style>
+          <li class="yNFsl SkUj4c">
+           Any country
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=ctr:countryIN&amp;cr=countryIN&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIDQ">
+            Country: India
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <div class="TWMOUc">
+           Any time
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+         
+          <li class="yNFsl SkUj4c">
+           Any time
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIDw">
+            Past hour
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIEA">
+            Past 24 hours
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIEQ">
+            Past week
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIEg">
+            Past month
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIEw">
+            Past year
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <div class="TWMOUc">
+           All results
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <li class="yNFsl SkUj4c">
+           All results
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=sam&amp;ie=UTF-8&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQpwUIFQ">
+            Verbatim
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script nonce="fBrVOKFlihv0L1odzffNHg">
+      (function(){var a=document.getElementById("st-toggle"),b=document.getElementById("st-card");a&&b&&a.addEventListener("click",function(c){b.style.display=b.style.display?"":"none";c.preventDefault()},!1);}).call(this);
+     </script>
+    </div>
+   </div>
+   <style>
+    .Gx5Zad{background-color:#fff;margin-bottom:30px;box-shadow:0 0 0 1px #dfe1e5;border-radius:8px}.pkphOe{font-size:14px;line-height:22px;}.EtOod>*:first-child{border-top-left-radius:8px;border-top-right-radius:8px}.EtOod>*:last-child{border-bottom-left-radius:8px;border-bottom-right-radius:8px}.EtOod>.qxDOhb>*:first-child{border-top-left-radius:8px;border-top-right-radius:8px}.EtOod>.qxDOhb>*:last-child{border-bottom-left-radius:8px;border-bottom-right-radius:8px}.fP1Qef{background:transparent !important;box-shadow:none !important;border:none !important}.Gx5Zad.fP1Qef{margin-top:-12px;margin-bottom:18px}.rl7ilb{display:block;clear:both}.egMi0{margin-bottom:-19px}.kCrYT{padding:12px 16px 12px}a.fdYsqf{color:#4b11a8}.sCuL3{position:absolute;width:100%;top:0;left:0;padding-top:1px;margin-bottom:-1px}.j039Wc{padding-top:28px;margin-bottom:-1px}.DnJfK{position:relative}.l97dzf{font-weight:400}.zBAuLc{line-height:normal;margin:0;padding:0}.BNeawe{white-space:pre-line;word-wrap:break-word}.vvjwJb{color:#1a0dab;font-size:20px;line-height:26px}a:visited .vvjwJb,.vvjwJb a:visited{color:#4b11a8}.vvjwJb.HrGdeb{color:#fff}a:visited .vvjwJb.HrGdeb,.vvjwJb.HrGdeb a:visited{color:rgba(255,255,255,.70)}.UPmit{font-size:14px;line-height:22px}.UPmit.HrGdeb{color:rgba(255,255,255,.70)}.UPmit.AP7Wnd{color:#202124}.lRVwie{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.Ap5OSd{padding-bottom:12px}.s3v9rd{font-size:14px;line-height:22px}.s3v9rd.HrGdeb{color:#fff}.s3v9rd.AP7Wnd{color:#202124}.mSx1Ee{padding-left:48px;margin:0}.v9i61e{padding-bottom:8px}.XLloXe{color:#1a0dab;font-size:14px;line-height:20px}a:visited .XLloXe,.XLloXe a:visited{color:#4b11a8}.XLloXe.HrGdeb{color:#fff}a:visited .XLloXe.HrGdeb,.XLloXe.HrGdeb a:visited{color:rgba(255,255,255,.70)}.K8tyEc{padding-bottom:12px}.mEUgP{font-weight:bold;font-size:16px;color:#000;margin:0;padding:12px 16px 0 16px}.FCUp0c{font-weight:bold}.x54gtf{height:1px;background-color:#dadce0;margin:0 16px}.Q0HXG{height:1px;background-color:#dadce0}.C7GS5b{margin-left:12px;display:table-cell;vertical-align:middle}.rkGIWe{padding:14px}.xpc .hwc,.xpx .hwx{display:none}.iIWm4b{box-sizing:border-box;min-height:48px}.fLtXsc{padding:14px;position:relative}.NtmAdb{width:40px;height:40px;overflow:hidden;margin-top:-10px;margin-bottom:-16px;margin-right:8px;border-radius:4px}.xpc .NtmAdb{display:inline-block}.xpx .NtmAdb{display:none}.Lt3Tzc{display:inline-block;padding-right:26px}.Lym8W{width:14px;height:20px;position:relative;margin:0 auto}.xCgLUe{position:absolute;right:16px;margin-top:-10px;top:50%}.Lym8W div{position:absolute;border-left:7px solid transparent;border-right:7px solid transparent;width:0;height:0;left:0}.IyYaEd{top:7px;border-top:7px solid #70757a}.ECUHQe{top:4px;border-top:7px solid #fff}.AeQQub{bottom:7px;border-bottom:7px solid #70757a}.YCU7eb{bottom:4px;border-bottom:7px solid #fff}.qxDOhb{border-radius:0}.yStFkb .xpd{border-radius:8px;box-shadow:none;border:1px solid #dadce0;margin-bottom:0}.oTWEpb{padding-top:12px}.n1Qedd{overflow:hidden;text-align:center}.KMAGC{margin:0 auto;display:block}.ho0sdc{margin:0 -50%;display:inline-block}.Xb5VRe{color:#1a0dab}a:visited .Xb5VRe{color:#4b11a8}.Xb5VRe.tr0dw{color:#fff}a:visited .Xb5VRe.tr0dw{color:rgba(255,255,255,.70)}.P1NWSe{display:table;width:100%;padding-top:16px;padding-bottom:16px;margin-bottom:-12px}.wOMIed{display:table-cell;vertical-align:top}.nkPlDb{vertical-align:middle}.JhFlyf{color:#3c4043;font-size:14px;text-align:center}.VQFmSd{display:block;white-space:pre-line;word-wrap:break-word}.JhFlyf.VQFmSd{line-height:22px}.f4J0H{padding:18px}.deIvCb{font-size:16px;line-height:20px;font-weight:400}.deIvCb.HrGdeb{color:#fff}.deIvCb.AP7Wnd{color:#202124}.tAd8D{font-size:14px;line-height:20px}.tAd8D.HrGdeb{color:rgba(255,255,255,.70)}.tAd8D.AP7Wnd{color:#70757a}.Xdlr0d{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -8px;padding:2px 0 16px 24px;margin-top:-2px;transform:translate3d(0,0,0)}.idg8be{display:table;border-collapse:separate;border-spacing:8px 0;margin:0 -8px;padding-right:16px}.BVG0Nb{display:table-cell;vertical-align:top;background-color:#fff;border-radius:8px;box-shadow:0 0 0 1px #dfe1e5;overflow:hidden}.WddBJd{display:block;margin:0 auto}.RJI4s{vertical-align:middle}.mHhylf{display:table-cell;vertical-align:middle}.WZ5GJf{align-items:center;padding:0 20px;min-width:112px}.qN9Ked,.DXk5Me{margin:0 auto}.DXk5Me{cursor:pointer;margin-bottom:12px}.Dk7jOe{display:block;margin:0 auto}.Qi9Fd{background:#fff;border:0;border-radius:999px;display:block;height:56px;justify-content:center;width:56px;z-index:0}.Qi9Fd{box-shadow:0 0 0 1px #dfe1e5,inset 0 0 0 0 rgba(0,0,0,.1),inset 0 0 0 0 rgba(255,255,255,.5)}.Qi9Fd:focus{outline:none}.Qi9Fd .hWHuJ{display:block;margin:0 auto}.ji5jpf{text-align:center}.gGQDvd{padding:14px;position:relative}.Q71vJc{display:block;position:relative;width:100%}.kjGX2{position:absolute;left:48px;right:0;vertical-align:bottom;display:inline-block;color:#3c4043}.ieB2Dd{overflow:hidden;margin-top:-10px;margin-bottom:-16px;margin-right:8px;border-radius:4px;display:inline-block;border-radius:50%;padding:10px}.OEaqif{width:20px;height:20px;display:block}.rLshyf,.BmP5tf{padding-top:12px;padding-bottom:12px}.YOx3Ab{padding-left:16px;}.w1C3Le,.BmP5tf,.G5NbBd,.CS4w5b{padding-left:16px;padding-right:16px;}.G5NbBd{padding-bottom:12px}.CS4w5b{padding-top:12px}.nMymef{display:flex}.G5eFlf{flex:1;display:block}.nMymef span{text-align:center}.EYqSq{margin:6px 4px 9px 0;border-radius:100%;display:inline-block;height:10px;vertical-align:middle;width:10px}.dfB0uf{color:#3c4043;font-weight:bold}
+   </style>
+   <div>
+    <!--SW_C_X-->
+   </div>
+   <div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://sam.gov/&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAkQAg&amp;usg=AOvVaw268XfsQHAatISGsn4gXClW">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           SAM.gov
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          sam.gov
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div class="v9i61e">
+          <div class="BNeawe s3v9rd AP7Wnd">
+           SAM.gov The System for Award Management (SAM) is the Official U.S. Government system that consolidated the capabilities of CCR/FedReg, ORCA, and EPLS.
+          </div>
+         </div>
+         <div>
+          <div class="v9i61e">
+           <div class="BNeawe s3v9rd AP7Wnd">
+            <span class="BNeawe">
+             <a href="/url?q=https://sam.gov/search/&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQjBB6BAgJEAU&amp;usg=AOvVaw2oenv2nYKQU1Vuk74br8_Y">
+              <span class="XLloXe AP7Wnd">
+               Search
+              </span>
+             </a>
+            </span>
+           </div>
+          </div>
+          <div class="v9i61e">
+           <div class="BNeawe s3v9rd AP7Wnd">
+            <span class="BNeawe">
+             <a href="/url?q=https://sam.gov/content/entity-registration&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQjBB6BAgJEAc&amp;usg=AOvVaw0yMLuprlIY_f65kZLP8kO7">
+              <span class="XLloXe AP7Wnd">
+               Entity Registrations
+              </span>
+             </a>
+            </span>
+           </div>
+          </div>
+          <div class="v9i61e">
+           <div class="BNeawe s3v9rd AP7Wnd">
+            <span class="BNeawe">
+             <a href="/url?q=https://sam.gov/content/opportunities&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQjBB6BAgJEAk&amp;usg=AOvVaw23sYLuat5xvAG-ug1EuKI6">
+              <span class="XLloXe AP7Wnd">
+               Contract Opportunities
+              </span>
+             </a>
+            </span>
+           </div>
+          </div>
+          <div>
+           <div class="BNeawe s3v9rd AP7Wnd">
+            <span class="BNeawe">
+             <a href="/url?q=https://sam.gov/content/status-tracker&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQjBB6BAgJEAs&amp;usg=AOvVaw2U6D-MHSmQcEtB5UdOQHJd">
+              <span class="XLloXe AP7Wnd">
+               Check Entity Status
+              </span>
+             </a>
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad xpd EtOod pkphOe">
+     <div class="K8tyEc">
+      <div class="mEUgP">
+       <span>
+        <div class="BNeawe">
+         <span class="FCUp0c rQMQod">
+          People also ask
+         </span>
+        </div>
+       </span>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQuk56BAgHEAI" id="tsuid_1" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          What does Sam mean?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_1">
+       </div>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQuk56BAgHEAk" id="tsuid_2" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          What is Sam used for?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_3">
+       </div>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQuk56BAgHEBA" id="tsuid_3" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          What is a SAM check?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_5">
+       </div>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="xpc">
+       <div class="duf-h">
+        <div aria-expanded="false" class="fLtXsc iIWm4b" data-ved="2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQuk56BAgHEBc" id="tsuid_4" role="button" tabindex="0">
+         <div class="Lt3Tzc">
+          What is the spelling of Sam?
+         </div>
+         <div class="Lym8W xCgLUe">
+          <div class="AeQQub hwc">
+          </div>
+          <div class="YCU7eb hwc">
+          </div>
+          <div class="IyYaEd hwx">
+          </div>
+          <div class="ECUHQe hwx">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="qxDOhb" id="accdef_7">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad xpd EtOod pkphOe">
+     <div class="kCrYT">
+      <div class="BNeawe deIvCb AP7Wnd">
+       <span class="BNeawe">
+        <a href="https://www.google.co.in/search?ie=UTF-8&amp;ei=MG30Y-2OELKq1QGW4o2oDQ&amp;q=sam&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQsAR6BAgBEAE">
+         <span class="deIvCb AP7Wnd">
+          <span class="FCUp0c rQMQod">
+           Images
+          </span>
+         </span>
+        </a>
+       </span>
+      </div>
+      <div class="BNeawe tAd8D AP7Wnd">
+       <span class="BNeawe">
+        <a href="https://www.google.co.in/search?ie=UTF-8&amp;ei=MG30Y-2OELKq1QGW4o2oDQ&amp;q=sam&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ7Al6BAgBEAI">
+         <span class="tAd8D AP7Wnd">
+          <span class="rQMQod Xb5VRe">
+           View all
+          </span>
+         </span>
+        </a>
+       </span>
+      </div>
+     </div>
+     <div>
+      <div>
+       <div>
+        <div class="Xdlr0d">
+         <div class="idg8be">
+          <a class="BVG0Nb" href="https://www.google.co.in/imgres?imgurl=https://upload.wikimedia.org/wikipedia/commons/c/c8/Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%2528cropped%2529_%2528cropped%2529.jpg&amp;imgrefurl=https://en.wikipedia.org/wiki/Sam_Altman&amp;h=1544&amp;w=1208&amp;tbnid=jXRQsOyBxPL0tM&amp;q=sam&amp;tbnh=150&amp;tbnw=117&amp;usg=AI4_-kTamG_jkHYEp1oXaoLRcVankQtNIg&amp;vet=1&amp;docid=rtM9I8hYFJ5ONM&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ9QF6BAgBEAQ">
+           <div>
+            <img alt="Sam Altman - Wikipedia" class="WddBJd" data-deferred="1" id="dimg_9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" href="https://www.google.co.in/imgres?imgurl=https://content3.jdmagicbox.com/comp/delhi/g6/011pxx11.xx11.200426184032.k3g6/catalogue/sam-electronic-noida-sector-15-noida-ac-dealers-carrier-k0r8pufad8.jpg&amp;imgrefurl=https://www.justdial.com/Delhi/Sam-Electronic-Opposite-Aggarwal-Sweet-Noida-Sector-15/011PXX11-XX11-200426184032-K3G6_BZDET&amp;h=1500&amp;w=2000&amp;tbnid=tihRrFA-6NNeaM&amp;q=sam&amp;tbnh=113&amp;tbnw=150&amp;usg=AI4_-kTopYk-dCxzGha3CeVuTagklkxLfw&amp;vet=1&amp;docid=T4-8zE9IsZoMkM&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ9QF6BAgBEAY">
+           <div>
+            <img alt="Sam Electronic in Noida Sector 15 - Best AC Dealers-Carrier in ..." class="WddBJd" data-deferred="1" id="dimg_15" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" href="https://www.google.co.in/imgres?imgurl=https://upload.wikimedia.org/wikipedia/commons/0/0c/Sam_Smith_Lollapalooza_2015-9_%2528cropped%2529.jpg&amp;imgrefurl=https://en.wikipedia.org/wiki/Sam_Smith&amp;h=734&amp;w=520&amp;tbnid=1r1Elg5LJKi5yM&amp;q=sam&amp;tbnh=141&amp;tbnw=100&amp;usg=AI4_-kTIeTpxWmkY1b5_YDE3pp3LXT_gpQ&amp;vet=1&amp;docid=MFI37Fjo2rqE7M&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ9QF6BAgBEAg">
+           <div>
+            <img alt="Sam Smith - Wikipedia" class="WddBJd" data-deferred="1" id="dimg_19" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" href="https://www.google.co.in/imgres?imgurl=https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id%3D100044372291649&amp;imgrefurl=https://m.facebook.com/@samsmithworld/&amp;h=1920&amp;w=1920&amp;tbnid=cnSqIWAprBQVaM&amp;q=sam&amp;tbnh=150&amp;tbnw=150&amp;usg=AI4_-kQEBiE2sPdhd7EUsgydP3QAeZ5ISg&amp;vet=1&amp;docid=rFGg_26BPNNf_M&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ9QF6BAgBEAo">
+           <div>
+            <img alt="SAM SMITH" class="WddBJd" data-deferred="1" id="dimg_23" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" href="https://www.google.co.in/imgres?imgurl=https://content.jdmagicbox.com/comp/delhi/f4/011pxx11.xx11.150226194324.c4f4/catalogue/sam-associates-noida-sector-9-noida-gst-registration-consultants-wj8se5hd5z.jpg?clr%3D273f3f&amp;imgrefurl=https://www.justdial.com/Delhi/Sam-Associates-Near-Bank-Of-India-Noida-Sector-9/011PXX11-XX11-150226194324-C4F4_BZDET&amp;h=1440&amp;w=1920&amp;tbnid=qKWy-0QOpFj7CM&amp;q=sam&amp;tbnh=113&amp;tbnw=150&amp;usg=AI4_-kRDCaHYUulAJ3zhxovqI1wnRJOOvg&amp;vet=1&amp;docid=heKlmCB49zT2NM&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ9QF6BAgBEAw">
+           <div>
+            <img alt="Sam Associates in Noida Sector 9 - Best GST Registration ..." class="WddBJd" data-deferred="1" id="dimg_25" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <a class="BVG0Nb" href="https://www.google.co.in/imgres?imgurl=https://static.wikia.nocookie.net/supernatural/images/5/55/SPN_0179.jpg/revision/latest?cb%3D20220125063035&amp;imgrefurl=https://supernatural.fandom.com/wiki/Sam_Winchester&amp;h=1072&amp;w=882&amp;tbnid=Wb_9pq-NPCk2vM&amp;q=sam&amp;tbnh=150&amp;tbnw=123&amp;usg=AI4_-kTVFYFVJByqYL4W8LbiGpZdshpMJQ&amp;vet=1&amp;docid=b5G1bhD9IH7rfM&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ9QF6BAgBEA4">
+           <div>
+            <img alt="Sam Winchester | Supernatural Wiki | Fandom" class="WddBJd" data-deferred="1" id="dimg_27" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:none;height:128px;max-height:128px"/>
+           </div>
+          </a>
+          <div class="mHhylf">
+           <div class="WZ5GJf">
+            <a class="qN9Ked" href="https://www.google.co.in/search?ie=UTF-8&amp;ei=MG30Y-2OELKq1QGW4o2oDQ&amp;q=sam&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ7Al6BAgBEA8">
+             <button class="DXk5Me Qi9Fd" tabindex="-1">
+              <span class="hWHuJ">
+               <img alt="" class="Dk7jOe" data-deferred="1" id="dimg_29" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:24px;max-height:24px"/>
+              </span>
+             </button>
+             <div class="BNeawe ji5jpf tAd8D AP7Wnd">
+              View all
+             </div>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://www.dictionary.com/browse/sam&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAQQAg&amp;usg=AOvVaw3bzThYcUS01fXaFZpWMHg5">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           Sam Definition &amp; Meaning - Dictionary.com
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          www.dictionary.com › browse › sam
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Sam definition, a male given name, form of Samuel. See more.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://en.wikipedia.org/wiki/Sam&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAAQAg&amp;usg=AOvVaw2i46pV5q6xIxupzI0cuxOt">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           Sam - Wikipedia
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          en.wikipedia.org › wiki › Sam
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Sam (given name), a list of people and fictional characters with the given name or nickname · Sam (surname), a list of people with the surname. Cen (surname) (岑) ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAUQAg&amp;usg=AOvVaw1fXbs2O1wJ_plgznKIS3b0">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           What is the AWS Serverless Application Model (AWS SAM)?
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          docs.aws.amazon.com › latest › developerguide › what-is-sam
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build serverless applications on AWS.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://aws.amazon.com/serverless/sam/&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAgQAg&amp;usg=AOvVaw3Vi5ekcsg07qcQCYs5D4We">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           AWS Serverless Application Model - Amazon Web Services
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          aws.amazon.com › serverless › sam
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           During deployment, SAM transforms and expands the SAM syntax into AWS CloudFormation syntax, enabling you to build serverless applications faster. To get ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://mars.nasa.gov/msl/spacecraft/instruments/sam/&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAMQAg&amp;usg=AOvVaw3jwFK2P-W2haSI8BGZlB-z">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           SAM | Instruments – NASA Mars Exploration
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          mars.nasa.gov › msl › spacecraft › instruments › sam
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           The Sample Analysis at Mars tool is called SAM. SAM is made up of three different instruments that search for and measure organic chemicals and light ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+     <div class="egMi0 kCrYT">
+      <a href="/url?q=https://genome.sph.umich.edu/wiki/SAM&amp;sa=U&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAIQAg&amp;usg=AOvVaw0dzdBZgzlvhjWfr-q7gAHG">
+       <div class="DnJfK">
+        <div class="j039Wc">
+         <h3 class="zBAuLc l97dzf">
+          <div class="BNeawe vvjwJb AP7Wnd">
+           SAM - Genome Analysis Wiki
+          </div>
+         </h3>
+        </div>
+        <div class="sCuL3">
+         <div class="BNeawe UPmit AP7Wnd lRVwie">
+          genome.sph.umich.edu › wiki › SAM
+         </div>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           The SAM Format is a text format for storing sequence data in a series of tab delimited ASCII columns. Most often it is generated as a human readable version ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="Gx5Zad xpd EtOod pkphOe">
+     <div class="K8tyEc">
+      <div class="mEUgP">
+       <span>
+        <div class="BNeawe">
+         Related searches
+        </div>
+       </span>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Sam+name&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEAI">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           Sam name
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=sam.gov+portal&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEAQ">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           sam.gov portal
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=SAM+meaning+in+Computer&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEAY">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           SAM meaning in Computer
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=SAM+format&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEAg">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           SAM format
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=Sam+book&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEAo">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_11" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           Sam book
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=SAM+missile&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEAw">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_13" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           SAM missile
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=SAM+registration+renewal&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEA4">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_17" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           SAM registration renewal
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div>
+      <div class="gGQDvd iIWm4b">
+       <a class="Q71vJc" href="/search?ie=UTF-8&amp;q=SAM+meaning+medical&amp;sa=X&amp;ved=2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ1QJ6BAgGEBA">
+        <accordion-entry-search-icon>
+         <span class="ieB2Dd">
+          <img alt="" class="OEaqif" data-deferred="1" id="dimg_21" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px"/>
+         </span>
+        </accordion-entry-search-icon>
+        <div class="kjGX2">
+         <span>
+          <div class="BNeawe s3v9rd AP7Wnd lRVwie">
+           SAM meaning medical
+          </div>
+         </span>
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <div>
+     <div class="Gx5Zad xpd EtOod pkphOe BmP5tf">
+      <div class="nMymef MUxGbd lyLwlc">
+       <a aria-label="Next page" class="nBDE1b G5eFlf" href="/search?q=sam&amp;ie=UTF-8&amp;ei=MG30Y-2OELKq1QGW4o2oDQ&amp;start=10&amp;sa=N">
+        Next &gt;
+       </a>
+      </div>
+     </div>
+    </div>
+    <div id="EOlPnc">
+     <div class="Srfpq">
+      <div>
+       <span class="EYqSq unknown_loc">
+       </span>
+       <span class="dfB0uf">
+        201305, Noida, Uttar Pradesh
+       </span>
+      </div>
+      <span>
+       From your IP address
+      </span>
+      <span>
+       -
+      </span>
+      <a href="/url?q=https://support.google.com/websearch%3Fp%3Dws_settings_location%26hl%3Den-IN&amp;sa=U&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQty4Iew&amp;usg=AOvVaw0keUJB-_4VuXOlcWEe0QiX">
+       Learn more
+      </a>
+     </div>
+     <div>
+      <a href="/url?q=https://accounts.google.com/ServiceLogin%3Fcontinue%3Dhttps://www.google.co.in/search%253Fq%253Dsam%26hl%3Den&amp;sa=U&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQxs8CCHw&amp;usg=AOvVaw1-XxN1XWXGgT3vlphM1Yrq">
+       Sign in
+      </a>
+     </div>
+     <div>
+      <a class="xeDNfc" href="https://www.google.co.in/preferences?hl=en-IN&amp;fg=1&amp;sa=X&amp;ved=0ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQ5fUCCH0">
+       Settings
+      </a>
+      <a class="xeDNfc" href="https://policies.google.com/privacy?hl=en-IN&amp;fg=1">
+       Privacy
+      </a>
+      <a class="xeDNfc" href="https://policies.google.com/terms?hl=en-IN&amp;fg=1">
+       Terms
+      </a>
+     </div>
+    </div>
+   </footer>
+   <script nonce="fBrVOKFlihv0L1odzffNHg">
+    (function(){var hl='en-IN';(function(){
+var f=this||self,g=function(a){return a};var h,k=function(){if(void 0===h){var a=null,b=f.trustedTypes;if(b&&b.createPolicy){try{a=b.createPolicy("goog#html",{createHTML:g,createScript:g,createScriptURL:g})}catch(c){f.console&&f.console.error(c.message)}h=a}else h=a}return h};var p=function(a,b){this.h=a===l&&b||"";this.g=m},q=function(a){return a instanceof p&&a.constructor===p&&a.g===m?a.h:"type_error:Const"},m={},l={};var t=function(a,b){this.g=b===r?a:""};t.prototype.toString=function(){return this.g+""};var u=function(a){return a instanceof t&&a.constructor===t?a.g:"type_error:TrustedResourceUrl"},y=function(){var a={},b=q(new p(l,"/complete/search"));if(!v.test(b))throw Error("d`"+b);var c=b.replace(w,function(e,d){if(!Object.prototype.hasOwnProperty.call(a,d))throw Error("e`"+d+"`"+b+"`"+JSON.stringify(a));e=a[d];return e instanceof p?q(e):encodeURIComponent(String(e))});return x(c)},w=/%{(\w+)}/g,v=RegExp("^((https:)?//[0-9a-z.:[\\]-]+/|/[^/\\\\]|[^:/\\\\%]+/|[^:/\\\\%]*[?#]|about:blank#)","i"),z=/^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,r={},x=function(a){var b=k();a=b?b.createScriptURL(a):a;return new t(a,r)},A=function(a,b,c){if(null==c)return b;if("string"===typeof c)return c?a+encodeURIComponent(c):"";for(var e in c)if(Object.prototype.hasOwnProperty.call(c,e)){var d=c[e];d=Array.isArray(d)?d:[d];for(var n=0;n<d.length;n++){var P=d[n];null!=P&&(b||(b=a),b+=(b.length>a.length?"&":"")+encodeURIComponent(e)+"="+encodeURIComponent(String(P)))}}return b};var B={},C=function(a,b){this.g=b===B?a:""};C.prototype.toString=function(){return this.g.toString()};
+function D(a,b){if(void 0!==a.tagName){if("script"===a.tagName.toLowerCase())throw Error("f");if("style"===a.tagName.toLowerCase())throw Error("f");}a.innerHTML=b instanceof C&&b.constructor===C?b.g:"type_error:SafeHtml"};function E(a){a=null===a?"null":void 0===a?"undefined":a;var b=k();a=b?b.createHTML(a):a;return new C(a,B)};var F=document.querySelector(".l"),G=document.querySelector("#sf"),H=G.querySelector(".sbc"),I=G.querySelector("[type=text]"),J=G.querySelector("[type=submit]"),K=G.querySelector(".sc"),L=G.querySelector(".x"),M=I.value,N=[],O=-1,Q=M,R,S,T;M||(L&&(L.style.display="none"),U(!1));function U(a){if(H.classList.contains("esbc")){var b=H.classList.contains("chsbc"),c=H.classList.contains("rtlsbc");a&&(K.style.display="block",b?(G.style.borderRadius="20px 20px 0 0",K.style.borderBottom="1px solid #DFE1E5",J.style.borderRadius=c?"20px 0 0 0":"0 20px 0 0"):H.style.borderRadius=c?"0 8px 0 0":"8px 0 0 0");a||(K.style.display="none",b?(G.style.borderRadius="20px",K.style.borderBottom="none",J.style.borderRadius=c?"20px 0 0 20px":"0 20px 20px 0"):H.style.borderRadius=c?"0 8px 8px 0":"8px 0 0 8px")}}function V(){G.querySelector("[name=oq]").value=Q;G.querySelector("[name=aqs]").value="heirloom-srp."+(0<=O?O:"")+"."+(0<N.length?"0l"+N.length:"")}
+function W(){R=null;if(S){var a={client:"heirloom-srp",hl:hl,json:"t",callback:"hS",q:S};"undefined"!==typeof ds&&ds&&(a.ds=ds);var b=document;var c="SCRIPT";"application/xhtml+xml"===b.contentType&&(c=c.toLowerCase());c=b.createElement(c);b=y();b=z.exec(u(b).toString());var e=b[3]||"";a=x(b[1]+A("?",b[2]||"",a)+A("#",e));c.src=u(a);var d,n;(d=(a=null==(n=(d=(c.ownerDocument&&c.ownerDocument.defaultView||window).document).querySelector)?void 0:n.call(d,"script[nonce]"))?a.nonce||a.getAttribute("nonce")||
+"":"")&&c.setAttribute("nonce",d);document.body.appendChild(c);S=null;R=setTimeout(W,500)}}function X(){for(;K.firstChild;)K.removeChild(K.firstChild);N=[];O=-1;U(!1)}function Y(){var a=K.querySelector(".scs");a&&(a.className="");0<=O?(a=K.childNodes[O],a.className="scs",M=a.textContent):M=Q;I.value=M}I.addEventListener("focus",function(){F&&(F.style.display="none")},!1);I.addEventListener("blur",function(){X();F&&(F.style.display="")},!1);I.addEventListener("keyup",function(a){M=I.value;T=!1;13===a.which?V():27===a.which?(X(),F&&(F.style.display=""),M=Q,I.value=M):40===a.which?(O++,O>=N.length&&(O=-1),Y()):38===a.which?(O--,-1>O&&(O=N.length-1),Y()):(a=M)?(L&&(L.style.display=""),S=a,R||W(),Q=a):(L&&(L.style.display="none"),U(!1),X(),Q="",T=!0)},!1);J.addEventListener("click",V,!1);L.addEventListener("click",function(){I.value="";L.style.display="none";U(!1)},!1);H.addEventListener("click",function(){I.focus()},!1);window.hS=function(a){if(!T){X();0===a[1].length&&U(!1);for(var b=0;b<a[1].length;b++){var c=a[1][b][0],e=document.createElement("div");D(e,E(c));e.addEventListener("mousedown",function(d){d.preventDefault();return!1},!1);c=c.replace(/<\/?b>/g,"");e.addEventListener("click",function(d){return function(){O=d;V();Y();X();G.submit()}}(b),!1);e.addEventListener("mouseover",function(d){return function(){O!==d&&(O=d,Y())}}(b),!1);K.appendChild(e);U(!0);N.push(c)}}};}).call(this);})();(function(){function b(a){for(a=a.target||a.srcElement;a&&"A"!==a.nodeName;)a=a.parentElement;a&&(a.href||"").match(/\/search.*[?&]tbm=isch/)&&(a.href+="&biw="+document.documentElement.clientWidth,a.href+="&bih="+document.documentElement.clientHeight)}document.addEventListener("click",b,!1);document.addEventListener("touchStart",b,!1);}).call(this);
+   </script>
+  </div>
+  <!-- cctlcm 5 cctlcm -->
+  <textarea class="csi" name="csi" style="display:none"></textarea>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var e='MG30Y-2OELKq1QGW4o2oDQ';var sn='web';var timl=false;(function(){function B(a){if(!a||C(a))return 0;if(!a.getBoundingClientRect)return 1;var c=function(b){return b.getBoundingClientRect()};return D(a,c)?0:J(a,c)}function D(a,c){var b;a:{for(b=a;b&&null!==b;b=b.parentElement)if("hidden"===b.style.overflow||"G-EXPANDABLE-CONTENT"===b.tagName&&"hidden"===getComputedStyle(b).getPropertyValue("overflow"))break a;b=null}if(!b)return!1;a=c(a);c=c(b);return a.bottom<c.top||a.top>=c.bottom||a.right<c.left||a.left>=c.right}
+function C(a){return"none"===a.style.display?!0:document.defaultView&&document.defaultView.getComputedStyle?(a=document.defaultView.getComputedStyle(a),!!a&&("hidden"===a.visibility||"0px"===a.height&&"0px"===a.width)):!1}
+function J(a,c){var b=c(a);a=b.left+window.pageXOffset;c=b.top+window.pageYOffset;var f=b.width;b=b.height;var g=0;if(0>=b&&0>=f)return g;var q=window.innerHeight||document.documentElement.clientHeight;0>c+b?g=2:c>=q&&(g=4);if(0>a+f||a>=(window.innerWidth||document.documentElement.clientWidth))g|=8;g||(g=1,c+b>q&&(g|=4));return g};var K=e,L=sn,M="undefined"===typeof de?!0:!1!==de,N=[];function O(a,c,b){a="/gen_204?atyp=csi&s="+L+"&t="+a+("&lite=1&ei="+K+"&conn="+(window.navigator&&window.navigator.connection?window.navigator.connection.type:-1)+c);c="&rt=";for(var f in b)a+=""+c+f+"."+b[f],c=",";return a}function P(a){a={prt:a};window.wsrt&&(a.wsrt=window.wsrt);return a}function Q(a){window.ping?window.ping(a):(new Image).src=a}
+(function(){for(var a=(new Date).getTime()-window.start,c=P(a),b=0,f=0,g=0,q=document.getElementsByTagName("img"),r=M?"&biw="+window.innerWidth+"&bih="+window.innerHeight:"",E=function(){r+="&ima="+g;c.aft=b;Q(O("aft",r,c))},x=0,R=function(h,t,u){var n=h.src;h.onload=function(){u&&n&&n===h.src||(f=(new Date).getTime()-window.start,t&&++x===g&&(b=f,E()),h.onload=null)}},S=0,d=void 0;d=q[S++];){var v=B(d),p=!!(v&1);p&&++g;var l=d.hasAttribute("data-ilite"),w=d.hasAttribute("data-deferred"),F=d.hasAttribute("data-src")||
+d.hasAttribute("data-lzysrc"),y=!w&&!l&&F;N.push([v,w||l,y,!!(google.ldi&&d.id&&google.ldi[d.id])||l&&F]);l=(v=d.complete&&!w&&!(p&&y))&&Number(d.getAttribute("data-iml"))||0;v&&l?(p&&++x,l&&(d=l-window.start,p&&(b=Math.max(b,d)),f=Math.max(f,d))):R(d,p,w||y)}b||(b=a);f||(f=b);x===g&&E();google.rglh&&google.rglh();window.addEventListener("load",function(){window.setTimeout(function(){c.ol=(new Date).getTime()-window.start;timl&&(c.iml=f);var h=window.performance&&window.performance.timing;h&&(c.rqst=
+h.responseEnd-h.requestStart,c.rspt=h.responseEnd-h.responseStart);for(var t=h=0,u=0,n=0,G=0,H=0,T=0,k;k=N[T++];){var m=k[0],z=k[1],I=k[2];k=k[3];var U=0==m,V=m&8,A=m&1;m=!A&&m&4;A&&(z&&!k||++u,I&&++H);z&&(A&&k&&++h,m&&!k&&++t);U||V?I||++G:z||++n}r+="&ime="+u+"&imel="+H+("&imex="+n+"&imeh="+G)+("&imea="+h+"&imeb="+t);Q(O("all",r,c))},0)},!1)})();}).call(this);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   window._setImagesSrc=function(e,f){function g(b){b.onerror=function(){b.style.display="none"};b.setAttribute("data-deferred","2");b.src=f}for(var c=0;c<e.length;++c){var a=e[c],d=document.getElementById(a)||document.querySelector('img[data-iid="'+a+'"]');d?(a=void 0,(null==(a=google.c)?0:a.setup)&&google.c.setup(d),g(d)):(google.iir=google.iir||{},google.iir[a]=f)}};"undefined"===typeof window.google&&(window.google={});
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/jpeg;base64,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';var i=['dimg_9'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/jpeg;base64,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\x3d';var i=['dimg_15'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/jpeg;base64,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\x3d';var i=['dimg_19'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/jpeg;base64,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\x3d\x3d';var i=['dimg_23'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/jpeg;base64,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\x3d\x3d';var i=['dimg_25'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIAAaQMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAACAwQFAQAGB//EADUQAAEEAQMDAwEFBgcAAAAAAAEAAgMRBBIhMRNBUQUiYXEyUoGRoRQjQmKx0SQzU3Ki8PH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMABP/EACARAAMBAAEEAwEAAAAAAAAAAAABEQIhAxIxQRMiUWH/2gAMAwEAAhEDEQA/APyZz3VwlhxPYqt4CSVFFDrD7UchDYwTsB3QMUfqE+p3Sadm/arymSpM9Nmucaj+yEnqSOIsmkWKwdxZK0IGsJALVm0imc0jaxzyNAJ+KXZGSwuBpwsr6b0/psotaK+ip9Rhinx3WwEVzXCl8nJb4ePJ87FL1Yjf2hyuKcvbFkhvAqiqAqHOwS4NXWvCXJsd0UekpQoIkboLRkNQ0sYc87JLyfCa4+QlElFGPag1pceAsk7knndWZctDR8JONVP2tOuELK4OxgGxBx7qzGzBE4ambeVPAGmJoPFIzHHtpG6Rwtk2I86Noadwz6K4ZcOTC5sOoWP4hVpWDhRZXprGPoHenJ+L6dDjR+2V5cOxPH4KLh0LuPjZSeu8O3Nq6M20fHKn9UY1mSWsoEkmx9Sjwx+7Ned1f1Tj0uYHKB3XIy1pRSMDgLXo4mE90GZeDpe1DqCd0G0g6IWpmHJyllFIRfKEHZaAbJMxgJDq7UVMx3SeHFu3g91pFgfbfKXk4bh/Be3ZMn+mQpjhpBHBRlw7Hf6qcNcwBrhRCbCQ4gEAn5QZRM2vSCIhbpXBm4prrB25WrNKCRI112FkYkTOm7rRRuFbFoo/mvTSujxnBoJoGlLSrLLcRk58jcnKkfHs0bNHwjxG6Bq51IcfHBZrceeB8qloA2A2Ct/Dmb9nCSdkyNlILoow74QgKNJoJetcLjXCXf8AKhAUFw3XgieN1xtAImPN/wAwfVazYg5oJqvlZMZ/et8Wmer5L5WsigP7kbOcD9ooNUbPCJ8/pvncYXBzfIUfua7YWmxAaa4VGPH79+EfA8p7FkyyDpjc4Fa0UDW4p65PvIBI7L0bmMZ7nBrRubPCPKjfJiskDgI3btaOfx8fRTfJbPTO5GFDjxF0bKJHNrK7q+DMM+OcZzSXi9LvNdlCWkHcJlUQ2vYI5TWpXBTWnwmJnXBJ3TXO8pdrABle0Hcqd+S3hoJKofCRAwkgWCdyo2sZe7r+gRUHeGgSXSup39gjGQ3UyImms2B7InRRvbqa4tcNiFMGxh9G/CZRhjRayBxc4NF77V4T8hjsYs4JcLCH0yVod027WF6V3+LaSdVFTfkrFAMj9p6Wpw06uF7D9Rmxz08guLSK38fKtz/UdcYaB7WtDfshSw5utwD7I+RaKXHgLi0u1lcEYlyS9gpoFj8lDkukEpom/wCq2sHKxo8eZzo2VQDasUs2SbHc93t/5LZfI3Uwu3yKhtwt/wCioLDHRPcJmN0HgDS4fitHOig6bWxP3YzhwrdK3yBdBNUySR4QW3wV3qU02Lo1aHrD7qY5oRSTPdG3falKLve1VHE98NgbA90MegOAeb+idMdpuUGNrhZCQ9pDjV0tnHZCS8EOrSe6hmDI321o/EoLQdYiAw3aJA+uOa8K2GEuncQba2zanhdBq1n2+WXsfotPGzIocZ9hlv2FizX/AGkNMfGV+mfks2A/Fex4KBc5dmzQ6UkAADigqcbNGlgI3vwtykFLL2G7HLMZgcd3e6lmujc+TzZW3n+oMcT7WE0ANgFHjOic4B0bT8tKGW0HeMtpIHGhIexovySEc8sj5xE0k6jutTGx4RE+fqFrne1ocOyix5xj5Lnuoarbfxzsl7qUeJ7Ftx3MimDg0ULonfZSa2Ijm/4k7Ehx3srvTb939UWmc+43wZwncDpBoeEovcTyuDsUTW++gLVSVbKMcuo7k7JMl6t1biQucXAADa9ylyw+/kcJU+Sjz9SbTUd2rKrGaBxqJ3QmEdE2RsqXxxjHZTybvZZsbOEZumyVZjxEvYLrdJi6er7JK1MXoNmj1am/RDWjdPCdIctjgb73yEmEEElaWbFEZPbJ37hdgwnPoNp1mvbyt3cDPp/eAZGU+HEa2zs1RYQMrTyXNtxTfVNtTKsg6R+as9Jx2RY8plfpdouq7rVJGmnqMzOmTkE/Kv0/I/NeDYGU6i+wmftEP+kP1/utaDtSZgiu3ZNmk94IU9rvITwgnwVQZBbJ33FJcspLrpDG2y35K9K2n18oRDXUDZK7puCOSWQxi9h2Sw2gB5KrliuGP/aVnBs9zRA1xvkq+F7+Q7gWoQ02Njytv0yHWx4c3+E8hDTSN08t+DOych7niyD/AOq/07LLHtPFb/RQZEVSkb80qsWEh9fyn+iDkKZe1psDMyRIXOcA4gj3JMGU8a6oatlITXPc7qrHYx8sYA7hGJIRa1p8HchzhW5U+p3ytXPxnAkdMjftuov2d33XfktnSgOpjXcf/9k\x3d';var i=['dimg_27'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAADFBMVEVMaXFChfRChfRChfT0tCPZAAAAA3RSTlMAgFJEkGxNAAAAL0lEQVR4AWPADxgdwBT3BTDF9AUiuhdC6WNK/v///y+UggrClSA07EWVglmEFwAA5eYSExeCwigAAAAASUVORK5CYII\x3d';var i=['dimg_29'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\x3d';var i=['dimg_1','dimg_3','dimg_5','dimg_7','dimg_11','dimg_13','dimg_17','dimg_21'];_setImagesSrc(i,s);})();
+  </script>
+  <script nonce="fBrVOKFlihv0L1odzffNHg">
+   (function(){var e='MG30Y-2OELKq1QGW4o2oDQ';(function(){var a=e;2===(window.performance&&window.performance.navigation&&window.performance.navigation.type)&&window.ping("/gen_204?ct=backbutton&ei="+a);}).call(this);})();(function(){var b=[function(){google.tick&&google.tick("load","dcl")}];google.dclc=function(a){b.length?b.push(a):a()};function c(){for(var a=b.shift();a;)a(),a=b.shift()}window.addEventListener?(document.addEventListener("DOMContentLoaded",c,!1),window.addEventListener("load",c,!1)):window.attachEvent&&window.attachEvent("onload",c);}).call(this);window.jsl=window.jsl||{};window.jsl.dh=function(a,b,f){try{var g=document.getElementById(a);if(g)g.innerHTML=b,f&&f();else{var c={id:a,script:String(!!f),milestone:String(google.jslm||0)};google.jsla&&(c.async=google.jsla);var h=a.indexOf("_"),d=0<h?a.substring(0,h):"",k=document.createElement("div");k.innerHTML=b;var e=k.children[0];if(e&&(c.tag=e.tagName,c["class"]=String(e.className||null),c.name=String(e.getAttribute("jsname")),d)){a=[];var l=document.querySelectorAll('[id^="'+d+'_"]');for(b=0;b<l.length;++b)a.push(l[b].id);c.ids=a.join(",")}google.ml(Error(d?"Missing ID with prefix "+d:"Missing ID"),!1,c)}}catch(m){google.ml(m,!0,{"jsl.dh":!0})}};(function(){var x=false;google.jslm=x?2:1;})();(function(){(function(){google.csct={};google.csct.ps='AOvVaw3MswAblmnmsv82k4fiKG5v\x26ust\x3d1677049520299463';})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){(function(){google.csct.rl=true;})();})();(function(){window.xp=function(b){function f(k,g,h){return"xp"+("x"==g?"c":"x")+h}for(var c=/\bxp(x|c)(\d?)\b/,a=b;a;){var e=a.className,d=e.match(c);if(d){d="c"==d[1];a.className=e.replace(c,f);b&&b.setAttribute("aria-expanded",d);if(d)for(b=a.getElementsByTagName("img"),c=0;c<b.length;++c)if(a=b[c],e=a.getAttribute("data-ll"))a.src=e,a.removeAttribute("data-ll");break}a=a.parentElement}};})();(function(){(function(){window.logVe=function(a){a&&a.attributes["data-ved"]&&window.ping("/gen_204?ved="+a.attributes["data-ved"].value)};}).call(this);})();(function(){(function(){var id='tsuid_1';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl=window.jsl||{};window.jsl.dh=window.jsl.dh||function(i,c,d){try{var e=document.getElementById(i);if(e){e.innerHTML=c;if(d){d();}}else{if(window.jsl.el){window.jsl.el(new Error('Missing ID.'),{'id':i});}}}catch(e){if(window.jsl.el){window.jsl.el(new Error('jsl.dh'));}}};})();(function(){window.jsl.dh('accdef_1','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eThe name Sam is of Hebrew origin and is often used as a nickname for Samuel. Its meanings include \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3e\x22told by God\x22 and \x22God hears.\x22\x3c/span\x3e In the Old Testament, Samuel is featured as a prophet and judge of the Israelites. Most people bearing the name Sam use it as a nickname, but it is sometimes a given name.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.verywellfamily.com/sam-name-meaning-origin-popularity-5179301\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAcQBg\x26amp;usg\x3dAOvVaw0Rh6pWwwNX8r_489zTkyZE\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eSam: Name Meaning, Origin, Popularity - Verywell Family\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.verywellfamily.com \u203a sam-name-meaning-origin-popularity-5179301\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.co.in/search?ie\x3dUTF-8\x26amp;ei\x3dMG30Y-2OELKq1QGW4o2oDQ\x26amp;q\x3dWhat+does+Sam+mean?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQzmd6BAgHEAc\x22\x3eMore results\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid_2';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_3','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eThe System for Award Management (SAM) is \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3ea government-wide registry for vendors doing business with the Federal government\x3c/span\x3e, and SAM registration requires annual renewal. SAM centralizes information about grant recipients and also provides a central location for grant recipients to change organizational information.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.grants.gov/help/html/help/Register/RegisterWithSAM.htm\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAcQDQ\x26amp;usg\x3dAOvVaw3lLS7CW8uXK5qtYpfwYhaf\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eRegister with SAM - Grants.gov\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.grants.gov \u203a help \u203a html \u203a help \u203a Register \u203a RegisterWithSAM\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.co.in/search?ie\x3dUTF-8\x26amp;ei\x3dMG30Y-2OELKq1QGW4o2oDQ\x26amp;q\x3dWhat+is+Sam+used+for?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQzmd6BAgHEA4\x22\x3eMore results\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid_3';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_5','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3eThe System for Award Management (SAM) is \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3ea federal government system that collects, validates, stores, and disseminates information on individuals or entities that are eligible for contract awards\x3c/span\x3e.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.ojp.gov/sites/g/files/xyckuh241/files/media/document/DOJ_OJP_TFSC_Excluded_Parties_Guide_508.pdf\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAcQFA\x26amp;usg\x3dAOvVaw1yRslVKO7si2qY6NIVFxN4\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eExcluded Parties Verification Guide Sheet - Office of Justice Programs\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.ojp.gov \u203a document \u203a DOJ_OJP_TFSC_Excluded_Parties_Guide_508\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.co.in/search?ie\x3dUTF-8\x26amp;ei\x3dMG30Y-2OELKq1QGW4o2oDQ\x26amp;q\x3dWhat+is+a+SAM+check?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQzmd6BAgHEBU\x22\x3eMore results\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();(function(){(function(){var id='tsuid_4';var lve=true;(function(){
+var e="undefined"!=typeof navigator&&!/Opera/.test(navigator.userAgent)&&/WebKit/.test(navigator.userAgent),f={A:1,INPUT:1,TEXTAREA:1,SELECT:1,BUTTON:1},g={Enter:13," ":32},h={A:13,BUTTON:0,CHECKBOX:32,COMBOBOX:13,FILE:0,GRIDCELL:13,LINK:13,LISTBOX:13,MENU:0,MENUBAR:0,MENUITEM:0,MENUITEMCHECKBOX:0,MENUITEMRADIO:0,OPTION:0,RADIO:32,RADIOGROUP:32,RESET:0,SUBMIT:0,SWITCH:32,TAB:0,TREE:13,TREEITEM:13},k={CHECKBOX:!0,FILE:!0,OPTION:!0,RADIO:!0},l={COLOR:!0,DATE:!0,DATETIME:!0,"DATETIME-LOCAL":!0,EMAIL:!0,MONTH:!0,NUMBER:!0,PASSWORD:!0,RANGE:!0,SEARCH:!0,TEL:!0,TEXT:!0,TEXTAREA:!0,TIME:!0,URL:!0,WEEK:!0};document.getElementById(id).onclick=function(){window.xp(this);lve&&window.logVe(this)};document.getElementById(id).onkeydown=function(d){var c=d.which||d.keyCode;!c&&d.key&&(c=g[d.key]);e&&3==c&&(c=13);if(13!=c&&32!=c)c=!1;else{var a=d.target||d.srcElement;!a.getAttribute&&a.parentNode&&(a=a.parentNode);var b;if(!(b="keydown"!=d.type)){if(b="getAttribute"in a)b=!((a.getAttribute("type")||a.tagName).toUpperCase()in l);b=!(b&&!("BUTTON"==a.tagName.toUpperCase()||a.type&&"FILE"==a.type.toUpperCase())&&!a.isContentEditable)}(b=b||d.ctrlKey||d.shiftKey||d.altKey||d.metaKey||(a.getAttribute("type")||
+a.tagName).toUpperCase()in k&&32==c)||((b=a.tagName in f)||(b=a.getAttributeNode("tabindex"),b=null!=b&&b.specified),b=!(b&&!a.disabled));if(b)c=!1;else{b=(a.getAttribute("role")||a.type||a.tagName).toUpperCase();var m=!(b in h)&&13==c;a="INPUT"!=a.tagName.toUpperCase()||!!a.type;c=(0==h[b]%c||m)&&a}}c&&(d.preventDefault(),window.xp(this),lve&&window.logVe(this))};}).call(this);})();})();(function(){window.jsl.dh('accdef_7','\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe s3v9rd AP7Wnd\x22\x3e[ sam ] SHOW IPA. / s\xe6m / PHONETIC RESPELLING. noun.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?q\x3dhttps://www.dictionary.com/browse/sam\x26amp;sa\x3dU\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQFnoECAcQGw\x26amp;usg\x3dAOvVaw1YQkxPEPhYrZIdaqooirYX\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eSam Definition \x26amp; Meaning - Dictionary.com\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd\x22\x3ewww.dictionary.com \u203a browse \u203a sam\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.co.in/search?ie\x3dUTF-8\x26amp;ei\x3dMG30Y-2OELKq1QGW4o2oDQ\x26amp;q\x3dWhat+is+the+spelling+of+Sam?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwjt5ta4hqb9AhUyVTUKHRZxA9UQzmd6BAgHEBw\x22\x3eMore results\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e');})();google.drty&&google.drty(undefined,true);
+  </script>
+ </body>
+</html>
