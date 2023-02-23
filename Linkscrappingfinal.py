@@ -7,7 +7,7 @@ def start_scrapping(scrapping_word):
     links=[]
     f1.read()
     result=requests.get(f"https://www.google.co.in{scrapping_word}","UTF-8")
-    soup=bs4.BeautifulSoup(result.text,"lxml")
+    soup=bs4.BeautifulSoup(result.text,"html.parser")
     f.write(soup.prettify())
     f.writelines("\n ")
     f.writelines("---------------------------new page----------------------------------"+ " \n")
@@ -18,7 +18,7 @@ def start_scrapping(scrapping_word):
             s=link.get('href') # took out link from the ankor tags
             links.append(s)
             if(re.search(r'/url', s)):#filtering urls and other data 
-                f1.write(urllib.parse.unquote(s[7:].split("&sa")[0])+"\n")#decoding url as python encode urls wich wile searching creates and issue
+                f1.write(urllib.parse.unquote(s[7:].split("&sa")[0])+"\n")#decoding url as python encode urls wich wile searching creates a issue
                 
     f1.writelines(f"\nAll links from page \n")
     f1.writelines(f"->>>>>> https://www.google.co.in{scrapping_word}  \n")
@@ -33,11 +33,12 @@ if __name__ == "__main__":
     input("Press enter to continue\n")
 
     scrapping_word=input("Enter string u want to scrap ->>  ")
+    
+    scrapping_word="/search?q="+scrapping_word#for first time will find on google
+    print("\nScraping from "+"https://www.google.co.in"+scrapping_word)
     f = open("webpage_structure.txt","w+",encoding="utf-8")# cotain lxml of web page 
     f1 = open("all_links.txt","r+",encoding="utf-8")# will append all links in this 
     links=[]# will contain unformated links
-    scrapping_word="/search?q="+scrapping_word#for first time will find on google
-    print("\nScraping from "+"https://www.google.co.in"+scrapping_word)
     links=start_scrapping(scrapping_word)
     
     #while analysing lxml i found out last link in links list is for next page 
