@@ -25,14 +25,16 @@ class Input():
                 break
             else:
                 print('Please Enter a Valid Word')
+    def create_url(self,scrapping_link):
+        return f"https://www.google.co.in{scrapping_link}"
         
         
 
 
-class CreateUrl():
-    url=''
-    def __init__(self,scrapping_link):
-        self.url=f"https://www.google.co.in{scrapping_link}"
+# class CreateUrl():
+#     url=''
+#     def __init__(self,scrapping_link):
+#         self.url=f"https://www.google.co.in{scrapping_link}"
     
 
 
@@ -44,7 +46,7 @@ class Scrape():
         soup=bs4.BeautifulSoup(result.text,"html.parser")
         return soup
 
-class LinkScrapper():    
+class LinkScrapper(WebScrapper):    
     all_links=[]
     def __init__(self):
         pass
@@ -62,12 +64,12 @@ class Process():
     all_links=[]
     def processer(self,url):
         scrape_object=Scrape()
-        soup=scrape_object.make_soup(url.url)
-        print(f"Scrapping from {url.url}")
+        soup=scrape_object.make_soup(url)
+        print(f"Scrapping from {url}")
         link_scrapper_object=LinkScrapper()
         link_scrapper_object.scrapping(soup,links)
         links.append(f"\nAll links from page")
-        links.append(f"->>>>>> {url.url}")
+        links.append(f"->>>>>> {url}")
         links.append(f"----------------------------------------------------------------------------------\n")
         self.all_links=link_scrapper_object.all_links
     def last_link(self):
@@ -96,13 +98,14 @@ class IconScrapper():
 if __name__ == "__main__":
     links=[]
     first_link=Input()
-    url=CreateUrl(first_link.link)
+    url=first_link.create_url(first_link.link)
     p=Process()
     p.processer(url)
     pagechanging_link=p.last_link()
     for i in range(1,10):
         next_page=pagechanging_link+str(i)+"0"
-        url=CreateUrl(next_page)
+        #url=CreateUrl(next_page)
+        url=first_link.create_url(next_page)
         p=Process()
         p.processer(url)
     Output(links)
