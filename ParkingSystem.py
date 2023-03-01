@@ -13,8 +13,19 @@ colorama.init(autoreset=True)
 
 parking_data = open("test.pkl", "rb")
 parking_space=load(parking_data)
-avail_spaces = 0
-total_spaces = 0
+
+def create_database():
+	conn = sqlite3.connect('Database.db')
+	c = conn.cursor()
+	c.execute("CREATE TABLE IF NOT EXISTS Billing(vehicle_no TEXT,vehicle_type TEXT, park_in_time TIMESTAMP NOT NULL, park_out_time TIMESTAMP NOT NULL,charges INTEGER)")
+	conn.commit()
+	c.execute("CREATE TABLE IF NOT EXISTS Booking(vehicle_no TEXT,vehicle_type TEXT, building integer, floor integer,row integer,column integer,park_in_time TIMESTAMP NOT NULL)")
+	conn.commit()
+	c.execute("CREATE TABLE IF NOT EXISTS Vehicle(vehicle_no TEXT,vehicle_type TEXT, vehicle_owner TEXT, vehicle_colour TEXT,vehicle_brand TEXT,vehicle_parked TEXT)")
+	conn.commit()
+	c.execute("CREATE TABLE IF NOT EXISTS all_employee(employee_name TEXT,employee_contact, employee_id TEXT, employee_password TEXT)")
+	conn.commit()
+	print(Back.LIGHTMAGENTA_EX+"DATABASE CONNECTED")
 
 def picle_dump():
 	f = open("test.pkl", "wb")
@@ -85,17 +96,64 @@ def find_vehicle():
 	conn = sqlite3.connect('Database.db')
 	c = conn.cursor()
 	c.execute("Select building,floor,row,column FROM Booking WHERE vehicle_no=(?) ",(V_no,))
-	location=c.fetchall()[0]
+	if(len(c.fetchall())==0):
+		print(Back.RED + "Enter Correct Vehicle no  ")
+		main()
+	location=c.fetchall()
+	location=location[0]
 	print(Back.GREEN + f"Your Vechile is Located at Floor no {location[1]} of Buildin no {location[0]} at Red location (row {location[2]} and column {location[3]})")
 	view_slots(location[0],location[1],location[2],location[3])
 
 
+def vehicle_charges(V_no):
+	return 100
+
+
+def unpark_vehicle():
+	conn = sqlite3.connect('Database.db')
+	c = conn.cursor()
+	print(Back.YELLOW + "Enter Vehicle no of Vehicle u want to Unpark")
+	V_no=input("-> ")
+	V_no=V_no.upper()
+	c.execute("Select building,floor,row,column,vehicle_type,park_in_time FROM Booking WHERE vehicle_no=(?) ",(V_no,))
+	vehicle_details=c.fetchall()
+	if(len(vehicle_details)==0):
+		print(Back.RED + "Enter Correct Vehicle no  ")
+		employee_functionality()
+	vehicle_details=vehicle_details[0]
+	building_no=vehicle_details[0]
+	floor_no=vehicle_details[1]
+	row=vehicle_details[2]
+	column=vehicle_details[3]
+	v_type=vehicle_details[4]
+	park_in_time=vehicle_details[5]
+	print(Back.GREEN + f"Your Vechile is Located at Floor no {vehicle_details[1]} of Buildin no {vehicle_details[0]} at Red location (row {vehicle_details[2]} and column {vehicle_details[3]})")
+	view_slots(building_no,floor_no,row,column)
+	parking_space[building_no][floor_no][row][column]=0
+	
+	print(Back.YELLOW +"Calculating Vechile Charges ")
+
+	charges=vehicle_charges(V_no)
+
+	print(Back.GREEN +f"Charges for vehicle no {V_no} are {charges}$")
+	input("Press Enter if payment Recived")
+	c.execute("INSERT INTO Billing(vehicle_no,vehicle_type , park_in_time , park_out_time, charges ) VALUES (?,?,?,?,?)", (V_no,v_type,park_in_time,datetime.datetime.now(),charges))
+	conn.commit()
+	c.execute("DELETE FROM Booking WHERE vehicle_no=(?) ",(V_no,))
+	conn.commit()
+	c.execute("UPDATE Vehicle SET vehicle_parked = (?) WHERE vehicle_no=(?) ",("UP",V_no,))
+	conn.commit()
+	conn.close()
+	picle_dump()
+	print(Back.GREEN +"Vechile unparked ")
+	print(Back.BLUE +"Thankyou for Visiting")
+	employee_functionality()
+	
+
 def do_booking(V_no,V_type,building_no,floor_no,row,column):
 	conn = sqlite3.connect('Database.db')
 	c = conn.cursor()
-	c.execute("CREATE TABLE IF NOT EXISTS Booking(vehicle_no TEXT,slot_type TEXT, building integer, floor integer,row integer,column integer,park_in_time TIMESTAMP NOT NULL)")
-	c = conn.cursor()
-	c.execute("INSERT INTO Booking(vehicle_no,slot_type , building , floor ,row ,column ,park_in_time  ) VALUES (?,?,?,?,?,?,?)", (V_no,V_type,building_no,floor_no,row,column,datetime.datetime.now()))
+	c.execute("INSERT INTO Booking(vehicle_no,vehicle_type , building , floor ,row ,column ,park_in_time  ) VALUES (?,?,?,?,?,?,?)", (V_no,V_type,building_no,floor_no,row,column,datetime.datetime.now()))
 	conn.commit()
 	conn.close()
 	print(Back.GREEN + "Booking Done")
@@ -104,7 +162,6 @@ def do_booking(V_no,V_type,building_no,floor_no,row,column):
 def park_vehicle():
 	conn = sqlite3.connect('Database.db')
 	c = conn.cursor()
-	c.execute("CREATE TABLE IF NOT EXISTS Parking(vehicle_no TEXT,vehicle_type TEXT, vehicle_owner TEXT, vehicle_colour TEXT,vehicle_brand TEXT,vehicle_parked TEXT)")
 	(building_no,floor_no)=display_parking()
 	print(Back.YELLOW +  '   Please Enter row you want to select    : ')
 	row = int(input("-> "))
@@ -116,7 +173,7 @@ def park_vehicle():
 	view_slots(building_no,floor_no,row,column)
 	V_no=   str(input("Please Enter Vehicle no            -> "))
 	V_no=V_no.upper()
-	c.execute("Select count(*) From Parking WHERE vehicle_no=(?)",(V_no,))
+	c.execute("Select count(*) From Vehicle WHERE vehicle_no=(?)",(V_no,))
 	count = c.fetchall()
 
 	if(count[0][0]==0):
@@ -145,20 +202,21 @@ def park_vehicle():
 		print("Vehical brand    = "+ V_brand)
 		input("Press Enter to continue or CTRL+C to Break Operation")
 		c = conn.cursor()
-		c.execute("INSERT INTO Parking(vehicle_no,vehicle_type , vehicle_owner, vehicle_colour ,vehicle_brand,vehicle_parked) VALUES (?,?,?,?,?,?)", (V_no.upper(),V_type.upper(),V_owner,V_colour,V_brand,"P"))
+		c.execute("INSERT INTO Vehicle(vehicle_no,vehicle_type , vehicle_owner, vehicle_colour ,vehicle_brand,vehicle_parked) VALUES (?,?,?,?,?,?)", (V_no.upper(),V_type.upper(),V_owner,V_colour,V_brand,"P"))
 		conn.commit()
 		conn.close()
 		print(Back.GREEN + "Vehicle information stored")
 	
 	if(count[0][0]!=0):
 		print(Back.GREEN + "Vehicle Already stored")
-		c.execute("Select vehicle_parked From Parking WHERE vehicle_no=(?)",(V_no,))
+		c.execute("Select vehicle_parked From Vehicle WHERE vehicle_no=(?)",(V_no,))
 		parked = c.fetchall()[0][0]
 		if(parked=="P"):
 			print(Back.RED + "Vehicle Already Parked ")
 			park_vehicle()
-		c.execute("UPDATE Parking SET vehicle_parked = (?) WHERE vehicle_no=(?) ",("P",V_no))
-		c.execute("Select vehicle_type From Parking WHERE vehicle_no=(?)",(V_no,))
+		c.execute("UPDATE Vehicle SET vehicle_parked = (?) WHERE vehicle_no=(?) ",("P",V_no))
+		conn.commit()
+		c.execute("Select vehicle_type From Vehicle WHERE vehicle_no=(?)",(V_no,))
 		V_type=c.fetchall()
 		V_type=V_type[0][0]
 		conn.commit()
@@ -174,14 +232,18 @@ def employee_functionality():
 	print(Back.CYAN + "+------------------------------+")
 	print(Back.CYAN + "|  1- Park a Vehicle           |")
 	print(Back.CYAN + "|  2- Unpark a Vehicle         |")
-	print(Back.CYAN + "|  3- Logout                   |")
+	print(Back.CYAN + "|  3- Display Parking space    |")
+	print(Back.CYAN + "|  4- Logout                   |")
 	print(Back.CYAN + "+------------------------------+")
 	user_input = input("-> ")
 	if user_input == '1':
 		park_vehicle()
 	elif user_input == '2':
-		pass
+		unpark_vehicle()
 	elif user_input == '3':
+		display_parking()
+		employee_functionality()
+	elif user_input == '4':
 		main()
 	else:
 		print(Back.RED+"    Please enter valid input    ")
@@ -210,7 +272,6 @@ def employee_login():
 def create_employee():
 	conn = sqlite3.connect('Database.db')
 	c = conn.cursor()
-	c.execute("CREATE TABLE IF NOT EXISTS employee_record(employee_name TEXT,employee_contact, employee_id TEXT, employee_password TEXT)")
 	E_name=str(input("Please Enter Employee Name         -> "))
 	E_contact= input("Please enter Employee Contact No   -> ")
 	E_id=str(input  ("Please Enter Employee Id           -> "))
@@ -290,8 +351,7 @@ def admin_functionality():
 	print(Back.CYAN + "|  1- Create Employee          |")
 	print(Back.CYAN + "|  2- Change Parking space     |")
 	print(Back.CYAN + "|  3- Display Parking space    |")
-	print(Back.CYAN + "|  4- Change Parking price     |")
-	print(Back.CYAN + "|  5- Logout                   |")
+	print(Back.CYAN + "|  4- Logout                   |")
 	print(Back.CYAN + "+------------------------------+")
 	user_input = input("-> ")
 	if user_input == '1':
@@ -300,9 +360,8 @@ def admin_functionality():
 		change_parking_space()
 	elif user_input == '3':
 		display_parking()
+		admin_functionality()
 	elif user_input == '4':
-		pass
-	elif user_input == '5':
 		main()
 	else:
 		print(Back.RED+"    Please enter valid input    ")
@@ -341,7 +400,7 @@ def login():
 def main():
 	print(Back.CYAN + "+------------------------------+")
 	print(Back.CYAN + "|  1- Login                    |")
-	print(Back.CYAN + "|  2- Find a Vehicale          |")
+	print(Back.CYAN + "|  2- Find a Vehicle          |")
 	print(Back.CYAN + "|  3- Display Vehicle Charges  |")
 	print(Back.CYAN + "|  4- Exit                     |")
 	print(Back.CYAN + "+------------------------------+")
@@ -351,7 +410,7 @@ def main():
 	elif user_input == '2':
 		find_vehicle()
 	elif user_input == '3':
-		pass
+		vehicle_charges()
 	elif user_input == '4':
 		exit()
 	else:
@@ -360,4 +419,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+	create_database()
+	main()

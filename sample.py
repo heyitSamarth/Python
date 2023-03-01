@@ -1,144 +1,106 @@
-import time
-import getpass
-import warnings
-import sqlite3
-import os
-from tqdm.auto import tqdm
-import numpy
-import colorama
-from colorama import Back, Style
-warnings.filterwarnings("ignore")
-colorama.init(autoreset=True)
-#------ScanningFromWebCamera---------------------
-def scan():
-	i = 0
-	cap = cv2.VideoCapture(0)
-	font = cv2.FONT_HERSHEY_PLAIN
-	while i<1:
-		ret,frame=cap.read()
-		decode = pyzbar.decode(frame)
-		for obj in decode:
-			name=obj.data
-			name2= name.decode()
-			ii = name2.split(' ')
-			db = sqlite3.connect('StudentDatabase.db')
-			c = db.cursor()
-			c.execute('''CREATE TABLE IF NOT EXISTS Record(iid TEXT, TimeofMArk TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL )''')
-			c.execute("INSERT INTO Record( iid) VALUES (?)", (ii))
-			c.execute("SELECT student_name,student_room from all_record where student_id=(?)", (ii))
-			rows = c.fetchall()
-			print("                                                                       ")
-			print("                                                                       ")
-			print("-----------------------------------------------------------------------")
-			for row in rows:
-				print(row)
-			print("Has marked his attendence .")
-			print("-----------------------------------------------------------------------")
-			print("                                                                       ")
-			db.commit()
-			warnings.filterwarnings("ignore")
+    # ParkingLot Class: This class represents the overall parking lot and contains information about the number of parking spaces available, the number of parking spaces reserved, the number of parking spaces occupied, etc.
 
-#database portions--------------------------------
-			i=i+1
-		cv2.imshow("QRCode",frame)
-		cv2.waitKey(2)
-		cv2.destroyAllWindows
-	warnings.filterwarnings("ignore")
-	scan()
+    # ParkingSpace Class: This class represents a single parking space within the parking lot. It contains information about the parking space, such as its location, size, availability, etc.
 
-#------CreateDatabaseForeEmployee------------------
-def database():
-	conn = sqlite3.connect('StudentDatabase.db')
-	c = conn.cursor()
-	c.execute("CREATE TABLE IF NOT EXISTS all_record(student_name TEXT, student_id TEXT, student_contact, student_room TEXT)")
-	conn.commit()
-	conn.close()
-database()
+    # Vehicle Class: This class represents a vehicle that enters the parking lot. It contains information about the vehicle, such as its type, license plate number, etc.
 
-#------AddingNewUsers/Employee---------------------
-def add_User():
-	Li = []
-	S_name=str(input("Please Enter Student Name\n"))
-	S_id=str(input("Please Enter Student Id\n"))
-	S_contac= input("Please enter Student Contact No\n")
-	S_room= input("Please enter Student Room \n")
-	Li.extend((S_name,S_id,S_contac,S_room))
-#-----using List Compression to convert a list to str--------------
-	listToStr = ' '.join([str(elem) for elem in Li])
-	#print(listToStr)
-	print(Back.YELLOW + "Please Verify the Information")
-	print("Student Name       = "+ S_name)
-	print("Student ID         = "+ S_id)
-	print("Student Contact    = "+ S_contac)
-	print("Student Room = "+ S_room)
-	input("Press Enter to continue or CTRL+C to Break Operation")
-	conn = sqlite3.connect('StudentDatabase.db')
-	c = conn.cursor()
-	c.execute("INSERT INTO all_record(student_name, student_id, student_contact, student_room) VALUES (?,?,?,?)", (S_name,S_id,S_contac,S_room))
-	conn.commit()
-	conn.close()
-	print("+------------------------------+")
-	markattendance()
+    # Reservation Class: This class represents a reservation made by a customer for a specific parking space at a specific time. It contains information about the reservation, such as the customer's name, the parking space reserved, the start and end times of the reservation, etc.
 
-#--------------ViewDatabase------------------------
-def viewdata():
-	conn = sqlite3.connect('StudentDatabase.db')
-	c = conn.cursor()
-	# c.execute('''CREATE TABLE IF NOT EXISTS Record(iid TEXT, TimeofMArk TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL )''')
-	c.execute("SELECT * FROM Record")
-	rows = c.fetchall()
-	for row in rows:
-		print(row)
-	conn.close()
-	print("+------------------------------+")
-	markattendance()
-#----------AdminScreen-----------------------
-def afterlogin():
-	print("+------------------------------+")
-	print("|  1- Add New Student          |")
-	print("|  2- Veiw Record              |")
-	print("|  3- Main Menu                |")
-	print("+------------------------------+")
-	user_input = input("")
-	if user_input == '1':
-		add_User()
-	if user_input == '2':
-		viewdata()
-	if user_input == '3':
-		markattendance()
+    # Payment Class: This class represents a payment made by a customer for their parking reservation. It contains information about the payment, such as the payment amount, payment method, etc.
 
-#Login--------------------------------------
-def login():
-	c=0
-	print(Back.CYAN+ 'Please Enter Password :')
-	print(Back.YELLOW+"     IHA           ")
-	password = getpass.getpass()
-	if(password==0):
-		markattendance()
-	if password =='aka':
-		for i in tqdm(range(4000)):
-			print("",end='\r')
-		print("------------------------------------------------------------------------------------------------------------------------")
-		print(Back.BLUE+"     IHA           ")
-		afterlogin()
-	if password != 'aka':
-		print("Invalid Password")
-		login()
-	
+    # Customer Class: This class represents a customer who uses the parking lot. It contains information about the customer, such as their name, contact information, payment history, etc.
+
+    # ParkingTicket Class: This class represents a ticket issued to a customer when they enter the parking lot. It contains information about the ticket, such as the ticket number, entry time, etc.
+
+    # ParkingSystem Class: This class represents the overall parking system and contains methods for managing the parking lot, parking spaces, vehicles, reservations, payments, customers, and parking tickets. It serves as the main interface for the parking lot management system.
+    
+    
+    
+class ParkingLot:
+    def __init__(self, total_spaces):
+        self.total_spaces = total_spaces
+        self.reserved_spaces = 0
+        self.occupied_spaces = 0
+    
+    def get_available_spaces(self):
+        return self.total_spaces - self.reserved_spaces - self.occupied_spaces
+
+class ParkingSpace:
+    def __init__(self, space_id, location, size):
+        self.space_id = space_id
+        self.location = location
+        self.size = size
+        self.is_reserved = False
+        self.is_occupied = False
+    
+    def reserve(self):
+        self.is_reserved = True
+    
+    def unreserve(self):
+        self.is_reserved = False
+    
+    def occupy(self):
+        self.is_occupied = True
+    
+    def release(self):
+        self.is_occupied = False
+
+class Vehicle:
+    def __init__(self, vehicle_type, license_plate):
+        self.vehicle_type = vehicle_type
+        self.license_plate = license_plate
+
+class Reservation:
+    def __init__(self, customer_name, parking_space, start_time, end_time):
+        self.customer_name = customer_name
+        self.parking_space = parking_space
+        self.start_time = start_time
+        self.end_time = end_time
+
+class Payment:
+    def __init__(self, amount, method):
+        self.amount = amount
+        self.method = method
+
+class Customer:
+    def __init__(self, name, contact_info):
+        self.name = name
+        self.contact_info = contact_info
+        self.payment_history = []
+
+    def add_payment(self, payment):
+        self.payment_history.append(payment)
+
+class ParkingTicket:
+    def __init__(self, ticket_number, entry_time):
+        self.ticket_number = ticket_number
+        self.entry_time = entry_time
+
+class ParkingSystem:
+    def __init__(self):
+        self.parking_lots = []
+        self.parking_spaces = []
+        self.customers = []
+        self.tickets = []
+
+    def add_parking_lot(self, total_spaces):
+        parking_lot = ParkingLot(total_spaces)
+        self.parking_lots.append(parking_lot)
+
+    def add_parking_space(self, space_id, location, size, lot_index):
+        parking_lot = self.parking_lots[lot_index]
+        space = ParkingSpace(space_id, location, size)
+        parking_lot.reserved_spaces += 1
+        self.parking_spaces.append((space, parking_lot))
+
+    def reserve_parking_space(self, customer_name, space_id, start_time, end_time):
+        pass
+        # make a arr or a dictionary that can store the reserved parking slot and every time assigning a parking space to a vehicle check in
+        # the dictionary that this parking space is reserved or not for a specific vehicle registered
+    
+    # def occupy_parking_space(self, space_id):
+    #     space, parking_lot = next(((s, l) for s, l in self.parking_spaces if
 
 
-
-#-------MainPage----------------------------
-def markattendance():
-	print("+------------------------------+")
-	print("|  1- Mark Attendance          |")
-	print("|  2- Admin Login              |")
-	print("|  3- Exit                     |")
-	print("+------------------------------+")
-	user_input2 = input("")
-	if user_input2== '1':
-		scan()
-	if user_input2 == '2':
-		login()
-	if user_input2 == '3':
-		exit()
+# this is a rough idea dekh le 
+# agar sahi lage toh
