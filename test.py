@@ -274,11 +274,49 @@ def unpark_vehicle():
 	conn.close()
 	picle_dump()
 
+def vehicle_charges(V_no):
+	conn = sqlite3.connect('Database.db')
+	c = conn.cursor()
+	c.execute("Select vehicle_type,park_in_time FROM Booking WHERE vehicle_no=(?) ",(V_no,))
+	vehicle_details=c.fetchall()
+	if(len(vehicle_details)==0):
+		print(Back.RED + "Enter Correct Vehicle no  ")
+		exit()
+	vehicle_details=vehicle_details[0]
+	v_type=vehicle_details[0]
+	park_in_time=vehicle_details[1]
+	duration=-datetime.datetime.now()-datetime.datetime.strptime(park_in_time,'%Y-%m-%d %H:%M:%S.%f')
+	duration=divmod(duration.total_seconds(),3600)[0]
+	if(v_type=="LMV"):
+		if(duration<2):
+			return 20
+		elif(duration<12):
+			return 40
+		else:
+			return 100
+	elif(v_type=="HMV"):
+		if(duration<2):
+			return 50
+		elif(duration<12):
+			return 150
+		else:
+			return 500
+	elif(v_type=="MC"):
+		if(duration<2):
+			return 10
+		elif(duration<12):
+			return 30
+		else:
+			return 70
+
+
+# vehicle_charges("MP07FL7890")
 
 # unpark_vehicle()
-print(parking_space)
-# for building in parking_space:
-# 	for floor in building:
-# 		for slot in floor:
-# 			print(slot)
-# 	print("\n")
+
+for building in parking_space:
+	for floor in building:
+		for slot in floor:
+			print(slot)
+		print("\n")
+	print("\n\n")

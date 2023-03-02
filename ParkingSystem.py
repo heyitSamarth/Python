@@ -2,9 +2,7 @@ import datetime
 import getpass
 import warnings
 import sqlite3
-import os
 from tqdm.auto import tqdm
-import numpy
 import colorama
 from colorama import Back, Style
 from pickle import load,dump
@@ -88,12 +86,6 @@ def display_parking():
 	view_slots(building_no,floor_no)
 	return(building_no,floor_no)		
 
-
-
-
-
-
-
 def find_vehicle():
 	print(Back.YELLOW + "Enter Vehicle no of Vehicle u want to get location of ")
 	V_no=input("-> ")
@@ -110,8 +102,41 @@ def find_vehicle():
 	view_slots(location[0],location[1],location[2],location[3])
 
 
+
 def vehicle_charges(V_no):
-	return 100
+	conn = sqlite3.connect('Database.db')
+	c = conn.cursor()
+	c.execute("Select vehicle_type,park_in_time FROM Booking WHERE vehicle_no=(?) ",(V_no,))
+	vehicle_details=c.fetchall()
+	if(len(vehicle_details)==0):
+		print(Back.RED + "Enter Correct Vehicle no  ")
+		main()
+	vehicle_details=vehicle_details[0]
+	v_type=vehicle_details[0]
+	park_in_time=vehicle_details[1]
+	duration=datetime.datetime.now()-datetime.datetime.strptime(park_in_time,'%Y-%m-%d %H:%M:%S.%f')
+	duration=divmod(duration.total_seconds(),3600)[0]
+	if(v_type=="LMV"):
+		if(duration<2):
+			return 30
+		elif(duration<12):
+			return 80
+		else:
+			return 150
+	elif(v_type=="HMV"):
+		if(duration<2):
+			return 60
+		elif(duration<12):
+			return 140
+		else:
+			return 300
+	elif(v_type=="MC"):
+		if(duration<2):
+			return 10
+		elif(duration<12):
+			return 30
+		else:
+			return 70
 
 
 def unpark_vehicle():
@@ -152,9 +177,8 @@ def unpark_vehicle():
 	picle_dump()
 	print(Back.GREEN +"Vechile unparked ")
 	print(Back.BLUE +"Thankyou for Visiting")
-	employee_functionality()
 	
-
+	
 def do_booking(V_no,V_type,building_no,floor_no,row,column):
 	conn = sqlite3.connect('Database.db')
 	c = conn.cursor()
@@ -176,7 +200,9 @@ def park_vehicle():
 		print(Back.Red + "Slot already booked ")
 		park_vehicle()
 	view_slots(building_no,floor_no,row,column)
-	V_no=   str(input("Please Enter Vehicle no            -> "))
+	V_no=  input("Please Enter Vehicle no            -> ")
+	if(len(V_no)==0):
+		park_vehicle()
 	V_no=V_no.upper()
 	c.execute("Select count(*) From Vehicle WHERE vehicle_no=(?)",(V_no,))
 	count = c.fetchall()
@@ -245,6 +271,7 @@ def employee_functionality():
 		park_vehicle()
 	elif user_input == '2':
 		unpark_vehicle()
+		employee_functionality()
 	elif user_input == '3':
 		display_parking()
 		employee_functionality()
@@ -288,7 +315,7 @@ def create_employee():
 	print("Employee Password   = "+ E_password)
 	input("Press Enter to continue or CTRL+C to Break Operation")
 	c = conn.cursor()
-	c.execute("INSERT INTO all_record(employee_name, employee_contact, employee_id ,employee_password) VALUES (?,?,?,?)", (E_name,E_contact,E_id,E_password))
+	c.execute("INSERT INTO all_employee(employee_name, employee_contact, employee_id ,employee_password) VALUES (?,?,?,?)", (E_name,E_contact,E_id,E_password))
 	conn.commit()
 	print(Back.GREEN + "Employee information stored")
 	conn.close()
@@ -361,6 +388,7 @@ def admin_functionality():
 	user_input = input("-> ")
 	if user_input == '1':
 		create_employee()
+		admin_functionality()
 	elif user_input == '2':
 		change_parking_space()
 	elif user_input == '3':
@@ -415,7 +443,11 @@ def main():
 	elif user_input == '2':
 		find_vehicle()
 	elif user_input == '3':
-		vehicle_charges()
+		print(Back.YELLOW + "Enter Vehicle no of Vehicle u want to get location of ")
+		V_no=input("-> ")
+		current_cost=vehicle_charges(V_no)
+		print(Back.GREEN + f"Your Current Vechile charges are {current_cost} ")
+		main()
 	elif user_input == '4':
 		exit()
 	else:
