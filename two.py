@@ -8,3 +8,4 @@ if __name__=="__main__":
     fuc2()
 else:
     print("it is emported  for 2.py")
+

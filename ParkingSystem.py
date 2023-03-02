@@ -157,7 +157,7 @@ def unpark_vehicle():
 	column=vehicle_details[3]
 	v_type=vehicle_details[4]
 	park_in_time=vehicle_details[5]
-	print(Back.GREEN + f"Your Vechile is Located at Floor no {vehicle_details[1]} of Buildin no {vehicle_details[0]} at Red location (row {vehicle_details[2]} and column {vehicle_details[3]})")
+	print(Back.GREEN + f"Your Vechile is Located at Floor no {building_no} of Buildin no {floor_no} at Red location (row {row} and column {column})")
 	view_slots(building_no,floor_no,row,column)
 	parking_space[building_no][floor_no][row][column]=0
 	
@@ -370,7 +370,7 @@ def change_parking_space():
 			change_parking_space()
 		
 	elif user_input == '2':
-		main()
+		admin_functionality()
 	elif user_input == '3':
 		admin_functionality()
 	else:
@@ -433,7 +433,7 @@ def login():
 def main():
 	print(Back.CYAN + "+------------------------------+")
 	print(Back.CYAN + "|  1- Login                    |")
-	print(Back.CYAN + "|  2- Find a Vehicle          |")
+	print(Back.CYAN + "|  2- Find a Vehicle           |")
 	print(Back.CYAN + "|  3- Display Vehicle Charges  |")
 	print(Back.CYAN + "|  4- Exit                     |")
 	print(Back.CYAN + "+------------------------------+")
