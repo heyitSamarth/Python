@@ -93,10 +93,10 @@ def find_vehicle():
 	conn = sqlite3.connect('Database.db')
 	c = conn.cursor()
 	c.execute("Select building,floor,row,column FROM Booking WHERE vehicle_no=(?) ",(V_no,))
-	if(len(c.fetchall())==0):
+	location=c.fetchall()
+	if(len(location)==0):
 		print(Back.RED + "Enter Correct Vehicle no  ")
 		main()
-	location=c.fetchall()
 	location=location[0]
 	print(Back.GREEN + f"Your Vechile is Located at Floor no {location[1]} of Buildin no {location[0]} at Red location (row {location[2]} and column {location[3]})")
 	view_slots(location[0],location[1],location[2],location[3])
@@ -146,17 +146,17 @@ def unpark_vehicle():
 	V_no=input("-> ")
 	V_no=V_no.upper()
 	c.execute("Select building,floor,row,column,vehicle_type,park_in_time FROM Booking WHERE vehicle_no=(?) ",(V_no,))
-	vehicle_details=c.fetchall()
-	if(len(vehicle_details)==0):
+	booking_details=c.fetchall()
+	if(len(booking_details)==0):
 		print(Back.RED + "Enter Correct Vehicle no  ")
 		employee_functionality()
-	vehicle_details=vehicle_details[0]
-	building_no=vehicle_details[0]
-	floor_no=vehicle_details[1]
-	row=vehicle_details[2]
-	column=vehicle_details[3]
-	v_type=vehicle_details[4]
-	park_in_time=vehicle_details[5]
+	booking_details=booking_details[0]
+	building_no=booking_details[0]
+	floor_no=booking_details[1]
+	row=booking_details[2]
+	column=booking_details[3]
+	v_type=booking_details[4]
+	park_in_time=booking_details[5]
 	print(Back.GREEN + f"Your Vechile is Located at Floor no {building_no} of Buildin no {floor_no} at Red location (row {row} and column {column})")
 	view_slots(building_no,floor_no,row,column)
 	parking_space[building_no][floor_no][row][column]=0
@@ -442,10 +442,11 @@ def main():
 		login()
 	elif user_input == '2':
 		find_vehicle()
+		main()
 	elif user_input == '3':
 		print(Back.YELLOW + "Enter Vehicle no of Vehicle u want to get location of ")
 		V_no=input("-> ")
-		current_cost=vehicle_charges(V_no)
+		current_cost=vehicle_charges(V_no.upper())
 		print(Back.GREEN + f"Your Current Vechile charges are {current_cost} ")
 		main()
 	elif user_input == '4':
