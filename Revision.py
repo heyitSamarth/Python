@@ -319,6 +319,7 @@ def func(x):
 interact(func,x=10)
 
 
+#decorator
 
 
 

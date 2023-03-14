@@ -289,12 +289,13 @@ def employee_login():
 	c = conn.cursor()
 	c.execute("SELECT employee_password FROM all_employee WHERE employee_id=(?)",(employee_id,))
 	rows = c.fetchall()
+	employee_password=""
 	if(len(rows)==0):
-		employee_login()
+		return employee_login()
 	else:
 		print(Back.YELLOW +'   Please Enter Password :      ')
 		employee_password = getpass.getpass()
-	if(employee_password==rows[0][0]):
+	if(employee_password==rows[0][0] ):
 		return True
 	else:
 		print(Back.RED+"      Invalid Password          ")
