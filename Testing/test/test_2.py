@@ -1,9 +1,17 @@
-def test_AssertTrue():
-    assert True
+import pytest
+def fizzBuzz(value):
+    if value==3:
+        return "Fizz"
+    return str(value)
 
-class Testsamm():
-    def test_sam(self):
-        assert True
+def test_return1With1PassedIn():
+    retVal=fizzBuzz(1)
+    assert retVal=="1"
 
-#function and file name should start with "test"
-#and class  with " Test"
+def test_return2With2PassedIn():
+    retVal=fizzBuzz(2)
+    assert retVal=="2"
+
+def test_returnFizzWith3PassedIn():
+    retVal=fizzBuzz(3)
+    assert retVal=="Fizz"

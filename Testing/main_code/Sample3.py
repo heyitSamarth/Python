@@ -25,4 +25,4 @@ def get_ip():
     if responce.status_code==200:
         return responce.json()['origin']
     
-get_ip()
+print(get_ip())

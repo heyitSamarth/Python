@@ -1,4 +1,4 @@
-from Sample2 import add
+from main_code.Sample2 import add
 import sys
 import pytest
 

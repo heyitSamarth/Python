@@ -319,8 +319,21 @@ def func(x):
 interact(func,x=10)
 
 
-#decorator
+#Error Handling
+def divide(dividend,divisor):
+    if divisor==0:
+        raise ZeroDivisionError("Devisior can't be zero")
+
+grades=[]
+try:
+    average=divide(sum(grades),len(grades))
+    print(f"The average grade is {average}.")
+except ZeroDivisionError as e:
+    print("There are no grades yet in your list .")
+else:
+    print("This will run if except dont run  ")
+finally:
+    print("this will run whatever is the case")
 
 
-
-
+from flask import Flask

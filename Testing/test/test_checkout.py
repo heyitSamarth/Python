@@ -1,4 +1,4 @@
-from checkout import Checkout
+from main_code.checkout import Checkout
 import pytest
 @pytest.fixture()
 def checkout():
